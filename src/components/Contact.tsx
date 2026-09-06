@@ -4,6 +4,37 @@ import { useState } from "react";
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setLoading(true);
+    setError("");
+
+    const form = e.currentTarget;
+    const data = new FormData(form);
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: data.get("name"),
+          email: data.get("email"),
+          service: data.get("service"),
+          message: data.get("message"),
+        }),
+      });
+
+      if (!res.ok) throw new Error("Error al enviar");
+      setSubmitted(true);
+    } catch {
+      setError("Hubo un error, intentá de nuevo.");
+    } finally {
+      setLoading(false);
+    }
+  }
 
   return (
     <section id="contacto" className="relative py-24 px-4 sm:px-6 lg:px-8">
@@ -74,17 +105,12 @@ export default function Contact() {
                 <p className="text-white/40">Te responderemos en menos de 24 horas.</p>
               </div>
             ) : (
-              <form
-                className="space-y-5"
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  setSubmitted(true);
-                }}
-              >
+              <form className="space-y-5" onSubmit={handleSubmit}>
                 <div>
                   <label className="block text-sm font-medium text-white/60 mb-1.5">Nombre</label>
                   <input
                     type="text"
+                    name="name"
                     required
                     className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white text-sm focus:outline-none focus:ring-2 focus:ring-violet-500/50 focus:border-violet-500/50 placeholder:text-white/20 transition-all"
                     placeholder="Tu nombre"
@@ -94,6 +120,7 @@ export default function Contact() {
                   <label className="block text-sm font-medium text-white/60 mb-1.5">Email</label>
                   <input
                     type="email"
+                    name="email"
                     required
                     className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white text-sm focus:outline-none focus:ring-2 focus:ring-violet-500/50 focus:border-violet-500/50 placeholder:text-white/20 transition-all"
                     placeholder="tu@email.com"
@@ -102,6 +129,7 @@ export default function Contact() {
                 <div>
                   <label className="block text-sm font-medium text-white/60 mb-1.5">Servicio de interés</label>
                   <select
+                    name="service"
                     className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white text-sm focus:outline-none focus:ring-2 focus:ring-violet-500/50 focus:border-violet-500/50 transition-all appearance-none"
                   >
                     <option className="bg-[#0a0a0f]">Landing Page</option>
@@ -115,17 +143,20 @@ export default function Contact() {
                 <div>
                   <label className="block text-sm font-medium text-white/60 mb-1.5">Mensaje</label>
                   <textarea
+                    name="message"
                     required
                     rows={4}
                     className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white text-sm focus:outline-none focus:ring-2 focus:ring-violet-500/50 focus:border-violet-500/50 resize-none placeholder:text-white/20 transition-all"
                     placeholder="Cuéntanos sobre tu proyecto..."
                   />
                 </div>
+                {error && <p className="text-red-400 text-sm">{error}</p>}
                 <button
                   type="submit"
-                  className="w-full bg-white text-black py-3 rounded-full text-sm font-medium hover:bg-white/90 transition-all duration-300"
+                  disabled={loading}
+                  className="w-full bg-white text-black py-3 rounded-full text-sm font-medium hover:bg-white/90 transition-all duration-300 disabled:opacity-50"
                 >
-                  Enviar mensaje
+                  {loading ? "Enviando..." : "Enviar mensaje"}
                 </button>
               </form>
             )}
