@@ -14,7 +14,8 @@ export default function Services() {
   ];
 
   return (
-    <section id="servicios" className="relative py-24 px-4 sm:px-6 lg:px-8 bg-[#1e293b]">
+    <section id="servicios" className="relative py-24 px-4 sm:px-6 lg:px-8 bg-[#1e293b] aurora-bg">
+      <div className="aurora-blob aurora-blob-2" style={{ width: '300px', height: '300px', opacity: 0.1 }} />
       <div className="max-w-7xl mx-auto">
         <div className="max-w-2xl mb-16">
           <p className="text-blue-400 font-medium text-sm mb-3 tracking-wide">
@@ -30,7 +31,7 @@ export default function Services() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((s) => (
-            <div key={s.title} className="glass-card rounded-xl p-6">
+            <div key={s.title} className="glass-card aurora-card rounded-xl p-6">
               <div className={`w-12 h-12 rounded-lg flex items-center justify-center ${s.color} mb-4`}>
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d={s.icon} />

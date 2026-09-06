@@ -6,7 +6,8 @@ const plans = [
 
 export default function Pricing() {
   return (
-    <section id="precios" className="relative py-24 px-4 sm:px-6 lg:px-8 bg-[#1e293b]">
+    <section id="precios" className="relative py-24 px-4 sm:px-6 lg:px-8 bg-[#1e293b] aurora-bg">
+      <div className="aurora-blob aurora-blob-3" style={{ width: '250px', height: '250px', opacity: 0.1 }} />
       <div className="max-w-7xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <p className="text-blue-400 font-medium text-sm mb-3 tracking-wide">Precios</p>

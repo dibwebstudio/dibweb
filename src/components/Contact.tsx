@@ -26,7 +26,8 @@ export default function Contact() {
   }
 
   return (
-    <section id="contacto" className="relative py-24 px-4 sm:px-6 lg:px-8 bg-[#0f172a]">
+    <section id="contacto" className="relative py-24 px-4 sm:px-6 lg:px-8 bg-[#0f172a] aurora-bg">
+      <div className="aurora-blob aurora-blob-1" style={{ width: '350px', height: '350px', opacity: 0.08 }} />
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12">
           <div>
