@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -45,7 +46,7 @@ export default function PuntosDePago() {
 
               <div className="relative">
                 <div className="glass-card rounded-2xl overflow-hidden aurora-card">
-                  <img src="/pos.png" alt="Sistema Punto de Venta - DibWeb Studio" className="w-full h-auto rounded-2xl" />
+                  <Image src="/pos.jpg" alt="Sistema Punto de Venta desarrollado por DibWeb Studio" width={1600} height={1000} className="w-full h-auto rounded-2xl" priority />
                 </div>
               </div>
             </div>

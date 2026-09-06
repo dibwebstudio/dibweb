@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Portfolio() {
   return (
     <section id="portfolio" className="relative py-24 px-4 sm:px-6 lg:px-8 bg-slate-50">
@@ -60,7 +62,7 @@ export default function Portfolio() {
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div>
               <div className="glass-card rounded-xl overflow-hidden aurora-card">
-                <img src="/pos.png" alt="Sistema Punto de Venta" className="w-full h-auto" />
+                <Image src="/pos.jpg" alt="Sistema Punto de Venta" width={1600} height={1000} className="w-full h-auto" loading="lazy" />
               </div>
             </div>
             <div>

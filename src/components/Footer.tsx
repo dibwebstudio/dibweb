@@ -1,11 +1,13 @@
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer className="bg-slate-900 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div className="lg:col-span-2">
-            <a href="#" className="flex items-center">
-              <img src="/logo.png" alt="DibWeb Studio" className="h-10 w-auto" />
+            <a href="#" className="flex items-center" aria-label="DibWeb Studio - Inicio">
+              <Image src="/logo.png" alt="DibWeb Studio" width={160} height={40} className="h-10 w-auto" />
             </a>
             <p className="mt-4 text-slate-400 text-sm max-w-xs leading-relaxed">
               Creamos páginas web modernas y efectivas que ayudan a tu negocio a crecer.
