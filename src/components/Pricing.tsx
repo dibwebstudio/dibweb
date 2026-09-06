@@ -65,11 +65,11 @@ export default function Pricing() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <p className="text-blue-600 font-medium text-sm mb-3 tracking-wide">Precios</p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">Planes transparentes</h2>
-          <p className="mt-4 text-slate-600 text-lg">Sin costos ocultos. Todos los precios en pesos chilenos.</p>
+          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">Planes transparentes y a medida</h2>
+          <p className="mt-4 text-slate-600 text-lg">Planes estándar desde $120.000 CLP o soluciones personalizadas para tu negocio.</p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-16">
+        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-10">
           {plans.map((p) => (
             <div key={p.name} className={`rounded-2xl p-8 ${p.popular ? "bg-blue-50 border border-blue-200 aurora-card ring-1 ring-blue-200" : "glass-card aurora-card"}`}>
               {p.popular && <span className="text-xs text-blue-600 font-medium mb-4 block">⭐ Más popular</span>}
@@ -97,6 +97,44 @@ export default function Pricing() {
               </a>
             </div>
           ))}
+        </div>
+
+        {/* Plan a medida */}
+        <div className="max-w-5xl mx-auto mb-16">
+          <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-slate-900 to-slate-800 p-8 sm:p-10 aurora-card">
+            <div className="aurora-blob aurora-blob-2" style={{ width: '250px', height: '250px', opacity: 0.2 }} />
+            <div className="relative grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <span className="inline-block bg-white/10 text-blue-300 text-xs font-medium px-3 py-1 rounded-full mb-4">Plan a Medida</span>
+                <h3 className="text-2xl font-bold text-white mb-3">¿Necesitas algo diferente?</h3>
+                <p className="text-slate-300 leading-relaxed">
+                  Si tu proyecto no encaja en estos planes, creamos una solución completamente personalizada:
+                  combinaciones de servicios, funcionalidades especiales, integraciones con tus sistemas o
+                  modalidad de arriendo mensual. Cuéntanos tu idea.
+                </p>
+              </div>
+              <div className="flex flex-col gap-4">
+                <ul className="space-y-2.5">
+                  {[
+                    "Alcance y precio según necesidades reales",
+                    "Integración con sistemas existentes (ERP, CRM, POS)",
+                    "Modalidad compra o arriendo mensual",
+                    "Acompañamiento y soporte dedicado",
+                  ].map((f) => (
+                    <li key={f} className="flex items-start gap-3 text-sm text-slate-200">
+                      <svg className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      {f}
+                    </li>
+                  ))}
+                </ul>
+                <a href="#contacto" className="mt-2 bg-white text-slate-900 text-center py-3 rounded-lg text-sm font-semibold hover:bg-blue-50 transition-colors">
+                  Cotizar proyecto a medida
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="max-w-5xl mx-auto">
