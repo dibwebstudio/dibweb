@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f8fafc;
-  --foreground: #0f172a;
+  --background: #0a1628;
+  --foreground: #e2e8f0;
 }
 
 @theme inline {
@@ -23,69 +23,60 @@ body {
 }
 
 .glass-card {
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
 }
 
 .glass-card:hover {
-  border-color: #3b82f6;
-  box-shadow: 0 4px 24px rgba(37, 99, 235, 0.08);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(96, 165, 250, 0.3);
+  box-shadow: 0 4px 24px rgba(96, 165, 250, 0.1);
 }
 
 .glass-strong {
-  background: #ffffff;
-  border: 1px solid #3b82f6;
-  box-shadow: 0 4px 24px rgba(37, 99, 235, 0.1);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(96, 165, 250, 0.4);
+  box-shadow: 0 4px 24px rgba(96, 165, 250, 0.15);
 }
 
 .glow {
-  box-shadow: 0 4px 30px rgba(37, 99, 235, 0.12);
+  box-shadow: 0 4px 30px rgba(96, 165, 250, 0.2);
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #1e40af 0%, #2563eb 50%, #3b82f6 100%);
+  background: linear-gradient(135deg, #60a5fa 0%, #93c5fd 50%, #bfdbfe 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .btn-primary {
-  background: #1e40af;
+  background: #2563eb;
   color: #ffffff;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 12px rgba(30, 64, 175, 0.25);
+  box-shadow: 0 2px 12px rgba(37, 99, 235, 0.4);
 }
 
 .btn-primary:hover {
-  background: #1e3a8a;
-  box-shadow: 0 4px 20px rgba(30, 64, 175, 0.35);
+  background: #1d4ed8;
+  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.5);
   transform: translateY(-1px);
 }
 
 .btn-secondary {
-  background: #ffffff;
-  border: 1px solid #cbd5e1;
-  color: #0f172a;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #e2e8f0;
   transition: all 0.3s ease;
 }
 
 .btn-secondary:hover {
-  background: #f1f5f9;
-  border-color: #3b82f6;
-  box-shadow: 0 2px 12px rgba(37, 99, 246, 0.08);
-}
-
-.divider-gradient {
-  height: 1px;
-  background: #e2e8f0;
-}
-
-.mesh-gradient {
-  background: linear-gradient(180deg, #eff6ff 0%, #f8fafc 100%);
+  background: rgba(255, 255, 255, 0.05);
+  border-color: #60a5fa;
 }
 
 .section-divider {
   height: 1px;
-  background: #e2e8f0;
+  background: rgba(255, 255, 255, 0.1);
 }

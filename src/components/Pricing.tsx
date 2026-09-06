@@ -13,7 +13,7 @@ const plans = [
     ],
     cta: "Empezar",
     popular: false,
-    accent: "text-slate-700",
+    accent: "text-slate-300",
   },
   {
     name: "Profesional",
@@ -31,7 +31,7 @@ const plans = [
     ],
     cta: "Más popular",
     popular: true,
-    accent: "text-blue-700",
+    accent: "text-blue-400",
   },
   {
     name: "Enterprise",
@@ -50,22 +50,22 @@ const plans = [
     ],
     cta: "Contactar",
     popular: false,
-    accent: "text-sky-700",
+    accent: "text-sky-400",
   },
 ];
 
 export default function Pricing() {
   return (
-    <section id="precios" className="relative py-24 px-4 sm:px-6 lg:px-8 bg-white">
+    <section id="precios" className="relative py-24 px-4 sm:px-6 lg:px-8 bg-[#0d1b2e]">
       <div className="max-w-7xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <p className="text-blue-700 font-medium text-sm mb-3 tracking-wide uppercase">
+          <p className="text-blue-400 font-medium text-sm mb-3 tracking-wide uppercase">
             Precios
           </p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white">
             Planes transparentes
           </h2>
-          <p className="mt-4 text-slate-500 text-lg">
+          <p className="mt-4 text-slate-400 text-lg">
             Sin costos ocultos. Elegí el plan que mejor se adapte a tu negocio.
           </p>
         </div>
@@ -86,16 +86,16 @@ export default function Pricing() {
               <h3 className={`text-xl font-semibold mb-2 ${plan.accent}`}>
                 {plan.name}
               </h3>
-              <p className="text-slate-500 text-sm mb-6 min-h-[40px]">
+              <p className="text-slate-400 text-sm mb-6 min-h-[40px]">
                 {plan.description}
               </p>
               <div className="mb-8">
-                <span className="text-4xl font-bold text-slate-900">${plan.price}</span>
-                <span className="text-slate-400 text-sm ml-1">USD</span>
+                <span className="text-4xl font-bold text-white">${plan.price}</span>
+                <span className="text-slate-500 text-sm ml-1">USD</span>
               </div>
               <ul className="space-y-3 mb-8">
                 {plan.features.map((feature) => (
-                  <li key={feature} className="flex items-start gap-3 text-sm text-slate-600">
+                  <li key={feature} className="flex items-start gap-3 text-sm text-slate-300">
                     <svg className={`w-5 h-5 ${plan.accent} shrink-0 mt-0.5`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
