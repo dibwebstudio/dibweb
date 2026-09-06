@@ -10,34 +10,34 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <a href="#" className="text-xl font-bold tracking-tight">
-            <span className="text-white">Dib</span>
+            <span className="text-[#1a1a2e]">Dib</span>
             <span className="gradient-text">Web</span>
-            <span className="text-white/30 text-sm font-light ml-1">Studio</span>
+            <span className="text-[#1a1a2e]/30 text-sm font-light ml-1">Studio</span>
           </a>
 
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#servicios" className="text-sm text-white/50 hover:text-white transition-colors duration-300">
+            <a href="#servicios" className="text-sm text-[#1a1a2e]/50 hover:text-[#1a1a2e] transition-colors duration-300">
               Servicios
             </a>
-            <a href="#portfolio" className="text-sm text-white/50 hover:text-white transition-colors duration-300">
+            <a href="#portfolio" className="text-sm text-[#1a1a2e]/50 hover:text-[#1a1a2e] transition-colors duration-300">
               Portfolio
             </a>
-            <a href="#precios" className="text-sm text-white/50 hover:text-white transition-colors duration-300">
+            <a href="#precios" className="text-sm text-[#1a1a2e]/50 hover:text-[#1a1a2e] transition-colors duration-300">
               Precios
             </a>
-            <a href="#contacto" className="text-sm text-white/50 hover:text-white transition-colors duration-300">
+            <a href="#contacto" className="text-sm text-[#1a1a2e]/50 hover:text-[#1a1a2e] transition-colors duration-300">
               Contacto
             </a>
             <a
               href="#contacto"
-              className="btn-primary px-5 py-2 rounded-full text-sm font-medium text-white"
+              className="btn-primary px-5 py-2 rounded-full text-sm font-medium"
             >
               Cotización gratis
             </a>
           </nav>
 
           <button
-            className="md:hidden p-2 text-white/60"
+            className="md:hidden p-2 text-[#1a1a2e]/60"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
           >
@@ -53,11 +53,11 @@ export default function Header() {
 
         {menuOpen && (
           <div className="md:hidden pb-4 space-y-2">
-            <a href="#servicios" className="block px-3 py-2 text-sm text-white/60 hover:text-white">Servicios</a>
-            <a href="#portfolio" className="block px-3 py-2 text-sm text-white/60 hover:text-white">Portfolio</a>
-            <a href="#precios" className="block px-3 py-2 text-sm text-white/60 hover:text-white">Precios</a>
-            <a href="#contacto" className="block px-3 py-2 text-sm text-white/60 hover:text-white">Contacto</a>
-            <a href="#contacto" className="block btn-primary px-5 py-2 rounded-full text-sm font-medium text-white text-center">Cotización gratis</a>
+            <a href="#servicios" className="block px-3 py-2 text-sm text-[#1a1a2e]/60 hover:text-[#1a1a2e]">Servicios</a>
+            <a href="#portfolio" className="block px-3 py-2 text-sm text-[#1a1a2e]/60 hover:text-[#1a1a2e]">Portfolio</a>
+            <a href="#precios" className="block px-3 py-2 text-sm text-[#1a1a2e]/60 hover:text-[#1a1a2e]">Precios</a>
+            <a href="#contacto" className="block px-3 py-2 text-sm text-[#1a1a2e]/60 hover:text-[#1a1a2e]">Contacto</a>
+            <a href="#contacto" className="block btn-primary px-5 py-2 rounded-full text-sm font-medium text-center">Cotización gratis</a>
           </div>
         )}
       </div>
