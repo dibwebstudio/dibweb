@@ -56,41 +56,27 @@ export default function Portfolio() {
             </div>
           </div>
 
-          {/* Project 2 */}
+          {/* Project 2 - POS System */}
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div>
               <div className="glass-card rounded-xl overflow-hidden aurora-card">
-                <div className="bg-[#0f172a] px-4 py-2 flex items-center gap-2 border-b border-white/5">
-                  <div className="flex gap-1.5">
-                    <div className="w-2.5 h-2.5 rounded-full bg-red-500" />
-                    <div className="w-2.5 h-2.5 rounded-full bg-yellow-500" />
-                    <div className="w-2.5 h-2.5 rounded-full bg-green-500" />
-                  </div>
-                  <div className="flex-1 text-center">
-                    <span className="text-xs text-slate-500">restaurante-lamesa.cl</span>
-                  </div>
-                </div>
-                <div className="aspect-video bg-gradient-to-br from-amber-900/40 to-amber-800/20 p-6">
-                  <div className="text-white text-lg font-bold mb-2">La Mesa</div>
-                  <p className="text-slate-400 text-xs mb-4">Restaurante & Bar</p>
-                  <div className="grid grid-cols-2 gap-3">
-                    <div className="bg-white/10 rounded h-20" />
-                    <div className="bg-white/10 rounded h-20" />
-                  </div>
-                </div>
+                <img src="/pos.png" alt="Sistema Punto de Venta" className="w-full h-auto" />
               </div>
             </div>
             <div>
-              <span className="inline-block bg-amber-500/10 text-amber-400 text-xs font-medium px-3 py-1 rounded-full mb-4">Landing Page</span>
-              <h3 className="text-2xl font-bold text-white mb-3">Restaurante La Mesa</h3>
+              <span className="inline-block bg-emerald-500/10 text-emerald-400 text-xs font-medium px-3 py-1 rounded-full mb-4">Software POS</span>
+              <h3 className="text-2xl font-bold text-white mb-3">Sistema de Cajero</h3>
               <p className="text-slate-400 mb-6 leading-relaxed">
-                Menú digital interactivo, sistema de reservas online y integración con redes sociales para un restaurante premium en Santiago.
+                Sistema de punto de venta para tiendas de retail. Control de inventario, múltiples medios de pago (efectivo, tarjeta), reportes de ventas y facturación electrónica.
               </p>
-              <div className="flex flex-wrap gap-2">
-                {["Next.js", "Supabase", "Tailwind CSS"].map((t) => (
+              <div className="flex flex-wrap gap-2 mb-6">
+                {["Next.js", "Supabase", "Tailwind CSS", "POS Integration"].map((t) => (
                   <span key={t} className="text-xs bg-white/5 text-slate-400 px-3 py-1 rounded-full border border-white/5">{t}</span>
                 ))}
               </div>
+              <a href="/servicios/puntos-de-pago" className="text-blue-400 hover:text-blue-300 text-sm font-medium transition-colors">
+                Ver más detalles →
+              </a>
             </div>
           </div>
 
