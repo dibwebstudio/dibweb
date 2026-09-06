@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "DibWeb - Desarrollo Web Profesional",
+  title: "DibWeb Studio - Desarrollo Web Profesional",
   description:
     "Creamos páginas web modernas, rápidas y optimizadas para convertir visitantes en clientes. Landing pages, sitios corporativos, e-commerce y más.",
 };
@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className={`${inter.variable} antialiased`}>
-      <body className="min-h-screen bg-white text-gray-900 font-sans">
+      <body className="min-h-screen bg-[#0a0a0f] text-white font-sans">
         {children}
       </body>
     </html>

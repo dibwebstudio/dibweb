@@ -53,49 +53,50 @@ const plans = [
 
 export default function Pricing() {
   return (
-    <section id="precios" className="py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
-      <div className="max-w-7xl mx-auto">
+    <section id="precios" className="relative py-24 px-4 sm:px-6 lg:px-8">
+      <div className="absolute inset-0 mesh-gradient opacity-50" />
+      <div className="relative max-w-7xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <p className="text-blue-600 font-medium text-sm mb-3 tracking-wide uppercase">
+          <p className="text-violet-400 font-medium text-sm mb-3 tracking-wide uppercase">
             Precios
           </p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white">
             Planes transparentes
           </h2>
-          <p className="mt-4 text-gray-600 text-lg">
-            Sin costos ocultos. Elige el plan que mejor se adapte a tu negocio.
+          <p className="mt-4 text-white/40 text-lg">
+            Sin costos ocultos. Elegí el plan que mejor se adapte a tu negocio.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {plans.map((plan) => (
             <div
               key={plan.name}
-              className={`relative bg-white rounded-2xl p-8 ${
+              className={`relative rounded-2xl p-8 transition-all duration-300 ${
                 plan.popular
-                  ? "border-2 border-gray-900 shadow-xl scale-105"
-                  : "border border-gray-200"
+                  ? "glass-strong glow scale-[1.02]"
+                  : "glass-card hover:bg-white/[0.06]"
               }`}
             >
               {plan.popular && (
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs font-medium px-4 py-1 rounded-full">
+                <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-violet-500 text-white text-xs font-medium px-4 py-1 rounded-full">
                   Más popular
                 </span>
               )}
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+              <h3 className="text-xl font-semibold text-white mb-2">
                 {plan.name}
               </h3>
-              <p className="text-gray-500 text-sm mb-6 min-h-[40px]">
+              <p className="text-white/40 text-sm mb-6 min-h-[40px]">
                 {plan.description}
               </p>
               <div className="mb-8">
-                <span className="text-4xl font-bold text-gray-900">${plan.price}</span>
-                <span className="text-gray-500 text-sm ml-1">USD</span>
+                <span className="text-4xl font-bold text-white">${plan.price}</span>
+                <span className="text-white/40 text-sm ml-1">USD</span>
               </div>
               <ul className="space-y-3 mb-8">
                 {plan.features.map((feature) => (
-                  <li key={feature} className="flex items-start gap-3 text-sm text-gray-600">
-                    <svg className="w-5 h-5 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <li key={feature} className="flex items-start gap-3 text-sm text-white/50">
+                    <svg className="w-5 h-5 text-violet-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     {feature}
@@ -104,10 +105,10 @@ export default function Pricing() {
               </ul>
               <a
                 href="#contacto"
-                className={`block w-full text-center py-3 rounded-full text-sm font-medium transition-colors ${
+                className={`block w-full text-center py-3 rounded-full text-sm font-medium transition-all duration-300 ${
                   plan.popular
-                    ? "bg-gray-900 text-white hover:bg-gray-800"
-                    : "border border-gray-300 text-gray-700 hover:border-gray-900 hover:text-gray-900"
+                    ? "bg-white text-black hover:bg-white/90"
+                    : "glass-card text-white hover:bg-white/10"
                 }`}
               >
                 {plan.cta}

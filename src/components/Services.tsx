@@ -58,33 +58,34 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="servicios" className="py-24 px-4 sm:px-6 lg:px-8 bg-gray-50">
-      <div className="max-w-7xl mx-auto">
+    <section id="servicios" className="relative py-24 px-4 sm:px-6 lg:px-8">
+      <div className="absolute inset-0 mesh-gradient opacity-50" />
+      <div className="relative max-w-7xl mx-auto">
         <div className="max-w-2xl mb-16">
-          <p className="text-blue-600 font-medium text-sm mb-3 tracking-wide uppercase">
+          <p className="text-violet-400 font-medium text-sm mb-3 tracking-wide uppercase">
             Servicios
           </p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white">
             Todo lo que necesitas para tu presencia digital
           </h2>
-          <p className="mt-4 text-gray-600 text-lg">
+          <p className="mt-4 text-white/40 text-lg">
             Ofrecemos soluciones completas para que tu negocio destaque en internet.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service) => (
             <div
               key={service.title}
-              className="bg-white p-8 rounded-2xl border border-gray-100 hover:border-gray-200 hover:shadow-lg transition-all duration-300"
+              className="glass-card p-8 rounded-2xl hover:bg-white/[0.06] transition-all duration-500 group"
             >
-              <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center text-gray-900 mb-6">
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center text-violet-400 mb-6 bg-violet-500/10 group-hover:bg-violet-500/20 transition-colors duration-300">
                 {service.icon}
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+              <h3 className="text-lg font-semibold text-white mb-3">
                 {service.title}
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-white/40 text-sm leading-relaxed">
                 {service.description}
               </p>
             </div>
