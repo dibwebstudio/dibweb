@@ -118,7 +118,7 @@ export default function TerminosServicio() {
                 <h2 className="text-xl font-semibold text-white mb-3">11. Contacto</h2>
                 <p className="text-slate-400">
                   Para consultas sobre estos términos y condiciones, puede contactarnos a través
-                  de nuestro formulario de contacto o al correo electrónico hola@dibweb.com.
+                  de nuestro formulario de contacto o al correo electrónico dibwebstudio@gmail.com.
                 </p>
               </div>
             </div>

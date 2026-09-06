@@ -100,7 +100,7 @@ export default function PoliticaPrivacidad() {
                 <p className="text-slate-400">
                   Si tiene preguntas sobre esta política de privacidad o sobre el tratamiento de sus datos,
                   puede contactarnos a través de nuestro formulario de contacto o al correo electrónico
-                  hola@dibweb.com.
+                  dibwebstudio@gmail.com.
                 </p>
               </div>
             </div>

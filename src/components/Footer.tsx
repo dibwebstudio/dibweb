@@ -22,9 +22,9 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-white text-sm mb-4">Contacto</h4>
             <ul className="space-y-2.5">
-              <li><a href="mailto:hola@dibweb.com" className="text-sm text-slate-400 hover:text-white transition-colors">hola@dibweb.com</a></li>
-              <li><a href="tel:+541112345678" className="text-sm text-slate-400 hover:text-white transition-colors">+54 11 1234-5678</a></li>
-              <li><span className="text-sm text-slate-400">Buenos Aires, Argentina</span></li>
+              <li><a href="mailto:dibwebstudio@gmail.com" className="text-sm text-slate-400 hover:text-white transition-colors">dibwebstudio@gmail.com</a></li>
+              <li><a href="tel:+56949417183" className="text-sm text-slate-400 hover:text-white transition-colors">+56 9 4941-7183</a></li>
+              <li><span className="text-sm text-slate-400">Santiago de Chile</span></li>
             </ul>
           </div>
         </div>
