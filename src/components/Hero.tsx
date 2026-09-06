@@ -35,7 +35,7 @@ export default function Hero() {
           </div>
 
           <div className="relative flex justify-center lg:justify-end items-end gap-4 lg:gap-6">
-            {/* Monitor - bigger */}
+            {/* Monitor - showing a website */}
             <div className="group relative">
               <svg viewBox="0 0 640 480" className="w-full max-w-2xl transition-transform duration-500 group-hover:scale-[1.02]" xmlns="http://www.w3.org/2000/svg">
                 <defs>
@@ -58,85 +58,129 @@ export default function Hero() {
                   </filter>
                 </defs>
 
+                {/* Shadow */}
                 <ellipse cx="320" cy="450" rx="180" ry="10" fill="rgba(0,0,0,0.3)" />
+
+                {/* Stand */}
                 <ellipse cx="320" cy="435" rx="80" ry="10" fill="url(#standBase)" />
                 <rect x="310" y="390" width="20" height="48" fill="url(#standNeck)" />
 
+                {/* Monitor body */}
                 <rect x="40" y="20" width="560" height="360" rx="4" fill="url(#monitorFrame)" filter="url(#monitorShadow)" />
+
+                {/* Bezel */}
                 <rect x="40" y="20" width="560" height="6" fill="#1e293b" />
                 <rect x="40" y="374" width="560" height="6" fill="#1e293b" />
                 <rect x="40" y="20" width="5" height="360" fill="#1e293b" />
                 <rect x="595" y="20" width="5" height="360" fill="#1e293b" />
+
+                {/* Webcam */}
                 <circle cx="320" cy="24" r="2" fill="#334155" />
                 <circle cx="320" cy="24" r="1" fill="#1e293b" />
 
-                <rect x="45" y="26" width="550" height="348" fill="#0f172a" />
-                <rect x="45" y="26" width="550" height="28" fill="#1e293b" />
+                {/* Screen - White background website */}
+                <rect x="45" y="26" width="550" height="348" fill="#ffffff" />
+
+                {/* Browser bar */}
+                <rect x="45" y="26" width="550" height="28" fill="#f1f5f9" />
                 <circle cx="61" cy="40" r="4" fill="#ef4444" />
                 <circle cx="73" cy="40" r="4" fill="#eab308" />
                 <circle cx="85" cy="40" r="4" fill="#22c55e" />
-                <rect x="100" y="34" width="400" height="12" rx="3" fill="#0f172a" />
-                <rect x="108" y="37" width="80" height="6" rx="1" fill="#334155" />
+                <rect x="100" y="34" width="400" height="12" rx="3" fill="#ffffff" stroke="#e2e8f0" strokeWidth="0.5" />
+                <rect x="108" y="37" width="60" height="6" rx="1" fill="#94a3b8" />
+                <text x="109" y="43" fontSize="5" fill="#64748b" fontFamily="system-ui">dibweb.com</text>
 
-                <rect x="45" y="54" width="550" height="24" fill="#1e293b" />
-                <rect x="56" y="58" width="50" height="8" rx="2" fill="#3b82f6" />
-                <rect x="116" y="59" width="60" height="6" rx="1" fill="#334155" />
+                {/* Website Navigation */}
+                <rect x="45" y="54" width="550" height="30" fill="#ffffff" />
+                <rect x="60" y="62" width="40" height="8" rx="2" fill="#2563eb" />
+                <text x="61" y="69" fontSize="6" fill="#ffffff" fontFamily="system-ui" fontWeight="bold">dibweb</text>
+                <rect x="350" y="62" width="40" height="6" rx="1" fill="#64748b" />
+                <text x="351" y="67" fontSize="5" fill="#64748b" fontFamily="system-ui">Servicios</text>
+                <rect x="400" y="62" width="40" height="6" rx="1" fill="#64748b" />
+                <text x="401" y="67" fontSize="5" fill="#64748b" fontFamily="system-ui">Portfolio</text>
+                <rect x="450" y="62" width="35" height="6" rx="1" fill="#64748b" />
+                <text x="451" y="67" fontSize="5" fill="#64748b" fontFamily="system-ui">Precios</text>
+                <rect x="495" y="60" width="45" height="10" rx="2" fill="#2563eb" />
+                <text x="500" y="67" fontSize="5" fill="#ffffff" fontFamily="system-ui">Contacto</text>
 
-                <rect x="45" y="78" width="100" height="296" fill="#0f172a" />
-                <rect x="56" y="88" width="70" height="6" rx="1" fill="#1e3a5f" />
-                <rect x="56" y="102" width="60" height="5" rx="1" fill="#1e293b" />
-                <rect x="56" y="114" width="65" height="5" rx="1" fill="#1e293b" />
-                <rect x="56" y="126" width="55" height="5" rx="1" fill="#2563eb" />
-                <rect x="56" y="138" width="62" height="5" rx="1" fill="#1e293b" />
-                <rect x="56" y="150" width="58" height="5" rx="1" fill="#1e293b" />
+                {/* Hero section */}
+                <rect x="45" y="84" width="550" height="120" fill="#f8fafc" />
+                <rect x="80" y="105" width="200" height="10" rx="2" fill="#1e293b" />
+                <rect x="80" y="120" width="200" height="10" rx="2" fill="#2563eb" />
+                <rect x="80" y="140" width="160" height="5" rx="1" fill="#94a3b8" />
+                <rect x="80" y="150" width="180" height="5" rx="1" fill="#94a3b8" />
+                <rect x="80" y="165" width="60" height="12" rx="2" fill="#2563eb" />
+                <text x="87" y="174" fontSize="5" fill="#ffffff" fontFamily="system-ui">Cotizar</text>
+                <rect x="150" y="165" width="60" height="12" rx="2" fill="none" stroke="#2563eb" strokeWidth="0.8" />
+                <text x="155" y="174" fontSize="5" fill="#2563eb" fontFamily="system-ui">Ver más</text>
 
-                <rect x="153" y="88" width="150" height="70" rx="4" fill="#1e293b" />
-                <rect x="165" y="98" width="40" height="6" rx="1" fill="#3b82f6" />
-                <rect x="165" y="112" width="100" height="4" rx="1" fill="#334155" />
-                <rect x="165" y="122" width="80" height="4" rx="1" fill="#334155" />
-                <rect x="165" y="138" width="50" height="12" rx="3" fill="#2563eb" />
+                {/* Hero image placeholder */}
+                <rect x="340" y="100" width="220" height="90" rx="6" fill="#e0e7ff" />
+                <rect x="360" y="115" width="80" height="6" rx="1" fill="#818cf8" />
+                <rect x="360" y="128" width="120" height="4" rx="1" fill="#a5b4fc" />
+                <rect x="360" y="138" width="100" height="4" rx="1" fill="#a5b4fc" />
+                <rect x="360" y="152" width="50" height="10" rx="2" fill="#6366f1" />
 
-                <rect x="311" y="88" width="150" height="70" rx="4" fill="#1e293b" />
-                <rect x="323" y="98" width="40" height="6" rx="1" fill="#10b981" />
-                <rect x="323" y="112" width="100" height="4" rx="1" fill="#334155" />
-                <rect x="323" y="122" width="80" height="4" rx="1" fill="#334155" />
-                <rect x="323" y="138" width="50" height="12" rx="3" fill="#10b981" />
+                {/* Services section */}
+                <rect x="45" y="204" width="550" height="80" fill="#ffffff" />
+                <rect x="80" y="214" width="80" height="6" rx="1" fill="#1e293b" />
+                <text x="81" y="219" fontSize="5" fill="#1e293b" fontFamily="system-ui" fontWeight="bold">Nuestros servicios</text>
 
-                <rect x="469" y="88" width="126" height="70" rx="4" fill="#1e293b" />
-                <rect x="481" y="98" width="40" height="6" rx="1" fill="#8b5cf6" />
-                <rect x="481" y="112" width="80" height="4" rx="1" fill="#334155" />
-                <rect x="481" y="122" width="70" height="4" rx="1" fill="#334155" />
-                <rect x="481" y="138" width="50" height="12" rx="3" fill="#8b5cf6" />
+                {/* Service cards */}
+                <rect x="80" y="228" width="110" height="48" rx="4" fill="#f1f5f9" />
+                <rect x="90" y="236" width="20" height="10" rx="2" fill="#dbeafe" />
+                <rect x="90" y="238" width="12" height="6" rx="1" fill="#3b82f6" />
+                <rect x="115" y="236" width="60" height="4" rx="1" fill="#334155" />
+                <rect x="115" y="244" width="50" height="3" rx="1" fill="#94a3b8" />
+                <rect x="90" y="258" width="90" height="3" rx="1" fill="#e2e8f0" />
+                <rect x="90" y="264" width="75" height="3" rx="1" fill="#e2e8f0" />
 
-                <rect x="153" y="166" width="300" height="208" rx="4" fill="#1e293b" />
-                <rect x="165" y="178" width="60" height="6" rx="1" fill="#f0f6fc" />
-                <rect x="170" y="320" width="20" height="44" fill="#1e3a5f" />
-                <rect x="198" y="300" width="20" height="64" fill="#2563eb" />
-                <rect x="226" y="280" width="20" height="84" fill="#3b82f6" />
-                <rect x="254" y="310" width="20" height="54" fill="#2563eb" />
-                <rect x="282" y="290" width="20" height="74" fill="#3b82f6" />
-                <rect x="310" y="270" width="20" height="94" fill="#60a5fa" />
-                <rect x="338" y="305" width="20" height="59" fill="#2563eb" />
-                <rect x="366" y="285" width="20" height="79" fill="#3b82f6" />
-                <rect x="394" y="295" width="20" height="69" fill="#2563eb" />
-                <rect x="422" y="325" width="20" height="39" fill="#1e3a5f" />
+                <rect x="200" y="228" width="110" height="48" rx="4" fill="#f1f5f9" />
+                <rect x="210" y="236" width="20" height="10" rx="2" fill="#dcfce7" />
+                <rect x="210" y="238" width="12" height="6" rx="1" fill="#22c55e" />
+                <rect x="235" y="236" width="60" height="4" rx="1" fill="#334155" />
+                <rect x="235" y="244" width="50" height="3" rx="1" fill="#94a3b8" />
+                <rect x="210" y="258" width="90" height="3" rx="1" fill="#e2e8f0" />
+                <rect x="210" y="264" width="75" height="3" rx="1" fill="#e2e8f0" />
 
-                <rect x="461" y="166" width="134" height="208" rx="4" fill="#1e293b" />
-                <rect x="473" y="178" width="50" height="6" rx="1" fill="#f0f6fc" />
-                <rect x="473" y="196" width="110" height="5" rx="1" fill="#1e293b" />
-                <rect x="473" y="210" width="90" height="5" rx="1" fill="#1e293b" />
-                <rect x="473" y="224" width="105" height="5" rx="1" fill="#1e293b" />
-                <rect x="473" y="244" width="100" height="5" rx="1" fill="#1e293b" />
-                <rect x="473" y="258" width="85" height="5" rx="1" fill="#1e293b" />
-                <rect x="473" y="272" width="95" height="5" rx="1" fill="#1e293b" />
-                <rect x="473" y="292" width="100" height="5" rx="1" fill="#1e293b" />
-                <rect x="473" y="306" width="80" height="5" rx="1" fill="#1e293b" />
+                <rect x="320" y="228" width="110" height="48" rx="4" fill="#f1f5f9" />
+                <rect x="330" y="236" width="20" height="10" rx="2" fill="#fef3c7" />
+                <rect x="330" y="238" width="12" height="6" rx="1" fill="#f59e0b" />
+                <rect x="355" y="236" width="60" height="4" rx="1" fill="#334155" />
+                <rect x="355" y="244" width="50" height="3" rx="1" fill="#94a3b8" />
+                <rect x="330" y="258" width="90" height="3" rx="1" fill="#e2e8f0" />
+                <rect x="330" y="264" width="75" height="3" rx="1" fill="#e2e8f0" />
 
-                <text x="320" y="380" textAnchor="middle" fill="#475569" fontSize="9" fontFamily="system-ui" fontWeight="300">dibweb</text>
+                <rect x="440" y="228" width="110" height="48" rx="4" fill="#f1f5f9" />
+                <rect x="450" y="236" width="20" height="10" rx="2" fill="#fce7f3" />
+                <rect x="450" y="238" width="12" height="6" rx="1" fill="#ec4899" />
+                <rect x="475" y="236" width="60" height="4" rx="1" fill="#334155" />
+                <rect x="475" y="244" width="50" height="3" rx="1" fill="#94a3b8" />
+                <rect x="450" y="258" width="90" height="3" rx="1" fill="#e2e8f0" />
+                <rect x="450" y="264" width="75" height="3" rx="1" fill="#e2e8f0" />
+
+                {/* Portfolio section */}
+                <rect x="45" y="284" width="550" height="60" fill="#f8fafc" />
+                <rect x="80" y="294" width="80" height="6" rx="1" fill="#1e293b" />
+                <text x="81" y="299" fontSize="5" fill="#1e293b" fontFamily="system-ui" fontWeight="bold">Proyectos recientes</text>
+
+                <rect x="80" y="306" width="80" height="30" rx="3" fill="#e0e7ff" />
+                <rect x="170" y="306" width="80" height="30" rx="3" fill="#dcfce7" />
+                <rect x="260" y="306" width="80" height="30" rx="3" fill="#fef3c7" />
+                <rect x="350" y="306" width="80" height="30" rx="3" fill="#fce7f3" />
+                <rect x="440" y="306" width="80" height="30" rx="3" fill="#f1f5f9" />
+
+                {/* Footer */}
+                <rect x="45" y="344" width="550" height="30" fill="#1e293b" />
+                <rect x="80" y="354" width="40" height="6" rx="1" fill="#475569" />
+                <rect x="80" y="362" width="60" height="4" rx="1" fill="#334155" />
+
+                {/* Logo text */}
+                <text x="320" y="380" textAnchor="middle" fill="#475569" fontSize="8" fontFamily="system-ui" fontWeight="300">dibweb.com</text>
               </svg>
             </div>
 
-            {/* Phone - smaller */}
+            {/* Phone - showing a mobile website */}
             <div className="group relative -ml-8 lg:-ml-16">
               <svg viewBox="0 0 200 420" className="w-full max-w-[140px] transition-transform duration-500 group-hover:scale-[1.03] group-hover:-translate-y-1" xmlns="http://www.w3.org/2000/svg">
                 <defs>
@@ -150,53 +194,112 @@ export default function Hero() {
                   </filter>
                 </defs>
 
+                {/* Shadow */}
                 <ellipse cx="100" cy="405" rx="55" ry="7" fill="rgba(0,0,0,0.3)" />
+
+                {/* Phone body */}
                 <rect x="10" y="10" width="180" height="400" rx="26" fill="url(#phoneFrame)" filter="url(#phoneShadow)" />
+
+                {/* Side buttons */}
                 <rect x="4" y="90" width="3" height="18" rx="1" fill="#94a3b8" />
                 <rect x="4" y="116" width="3" height="28" rx="1" fill="#94a3b8" />
                 <rect x="4" y="150" width="3" height="28" rx="1" fill="#94a3b8" />
                 <rect x="193" y="125" width="3" height="35" rx="1" fill="#94a3b8" />
-                <rect x="16" y="16" width="168" height="388" rx="20" fill="#0f172a" />
+
+                {/* Screen */}
+                <rect x="16" y="16" width="168" height="388" rx="20" fill="#ffffff" />
+
+                {/* Dynamic Island */}
                 <rect x="60" y="22" width="80" height="22" rx="11" fill="#000" />
                 <circle cx="116" cy="33" r="4" fill="#1e293b" />
                 <circle cx="116" cy="33" r="2.5" fill="#0f172a" />
-                <text x="28" y="30" fill="#94a3b8" fontSize="9" fontFamily="system-ui" fontWeight="600">9:41</text>
-                <rect x="148" y="24" width="14" height="7" rx="2" fill="none" stroke="#94a3b8" strokeWidth="1" />
+
+                {/* Status bar */}
+                <text x="28" y="30" fill="#1e293b" fontSize="9" fontFamily="system-ui" fontWeight="600">9:41</text>
+                <rect x="148" y="24" width="14" height="7" rx="2" fill="none" stroke="#1e293b" strokeWidth="1" />
                 <rect x="150" y="26" width="8" height="3" rx="1" fill="#22c55e" />
-                <rect x="16" y="48" width="168" height="36" fill="#1e293b" />
-                <rect x="26" y="55" width="60" height="8" rx="2" fill="#3b82f6" />
-                <rect x="26" y="67" width="90" height="5" rx="1" fill="#334155" />
-                <rect x="16" y="88" width="168" height="80" fill="#1e293b" />
-                <rect x="26" y="98" width="70" height="8" rx="2" fill="#1e3a5f" />
-                <rect x="26" y="114" width="130" height="4" rx="1" fill="#334155" />
-                <rect x="26" y="122" width="110" height="4" rx="1" fill="#334155" />
-                <rect x="26" y="130" width="140" height="4" rx="1" fill="#334155" />
-                <rect x="26" y="144" width="50" height="14" rx="3" fill="#2563eb" />
-                <rect x="16" y="176" width="78" height="60" rx="4" fill="#1e293b" />
-                <rect x="26" y="186" width="24" height="4" rx="1" fill="#3b82f6" />
-                <rect x="26" y="196" width="56" height="3" rx="1" fill="#334155" />
-                <rect x="26" y="204" width="46" height="3" rx="1" fill="#334155" />
-                <rect x="26" y="216" width="36" height="8" rx="2" fill="#2563eb" />
-                <rect x="106" y="176" width="78" height="60" rx="4" fill="#1e293b" />
-                <rect x="116" y="186" width="24" height="4" rx="1" fill="#10b981" />
-                <rect x="116" y="196" width="56" height="3" rx="1" fill="#334155" />
-                <rect x="116" y="204" width="46" height="3" rx="1" fill="#334155" />
-                <rect x="116" y="216" width="36" height="8" rx="2" fill="#10b981" />
-                <rect x="16" y="244" width="168" height="32" rx="4" fill="#1e293b" />
-                <circle cx="34" cy="260" r="8" fill="#334155" />
-                <rect x="48" y="254" width="80" height="4" rx="1" fill="#475569" />
-                <rect x="48" y="262" width="60" height="3" rx="1" fill="#334155" />
-                <rect x="16" y="282" width="168" height="32" rx="4" fill="#1e293b" />
-                <circle cx="34" cy="298" r="8" fill="#334155" />
-                <rect x="48" y="292" width="80" height="4" rx="1" fill="#475569" />
-                <rect x="48" y="300" width="60" height="3" rx="1" fill="#334155" />
-                <rect x="16" y="360" width="168" height="28" fill="#1e293b" />
-                <rect x="34" y="366" width="18" height="12" rx="3" fill="#2563eb" />
-                <rect x="62" y="368" width="18" height="8" rx="2" fill="#334155" />
-                <rect x="90" y="368" width="18" height="8" rx="2" fill="#334155" />
-                <rect x="118" y="368" width="18" height="8" rx="2" fill="#334155" />
-                <rect x="146" y="368" width="18" height="8" rx="2" fill="#334155" />
-                <rect x="68" y="396" width="64" height="4" rx="2" fill="#334155" />
+
+                {/* Mobile Navigation */}
+                <rect x="16" y="48" width="168" height="28" fill="#ffffff" />
+                <rect x="26" y="55" width="30" height="7" rx="2" fill="#2563eb" />
+                <text x="27" y="61" fontSize="5" fill="#ffffff" fontFamily="system-ui" fontWeight="bold">dib</text>
+                {/* Hamburger menu */}
+                <rect x="164" y="55" width="12" height="2" rx="1" fill="#1e293b" />
+                <rect x="164" y="59" width="12" height="2" rx="1" fill="#1e293b" />
+                <rect x="164" y="63" width="12" height="2" rx="1" fill="#1e293b" />
+
+                {/* Mobile Hero */}
+                <rect x="16" y="76" width="168" height="100" fill="#f8fafc" />
+                <rect x="26" y="88" width="80" height="7" rx="1" fill="#1e293b" />
+                <rect x="26" y="98" width="80" height="7" rx="1" fill="#2563eb" />
+                <rect x="26" y="112" width="120" height="4" rx="1" fill="#94a3b8" />
+                <rect x="26" y="120" width="100" height="4" rx="1" fill="#94a3b8" />
+                <rect x="26" y="128" width="110" height="4" rx="1" fill="#94a3b8" />
+                <rect x="26" y="140" width="50" height="10" rx="2" fill="#2563eb" />
+                <text x="30" y="147" fontSize="4" fill="#ffffff" fontFamily="system-ui">Cotizar</text>
+                <rect x="82" y="140" width="50" height="10" rx="2" fill="none" stroke="#2563eb" strokeWidth="0.8" />
+                <text x="86" y="147" fontSize="4" fill="#2563eb" fontFamily="system-ui">Ver más</text>
+
+                {/* Mobile Services */}
+                <rect x="16" y="180" width="168" height="100" fill="#ffffff" />
+                <rect x="26" y="190" width="70" height="5" rx="1" fill="#1e293b" />
+                <text x="27" y="195" fontSize="5" fill="#1e293b" fontFamily="system-ui" fontWeight="bold">Servicios</text>
+
+                <rect x="26" y="200" width="74" height="32" rx="3" fill="#f1f5f9" />
+                <rect x="32" y="206" width="14" height="7" rx="2" fill="#dbeafe" />
+                <rect x="32" y="208" width="8" height="4" rx="1" fill="#3b82f6" />
+                <rect x="50" y="206" width="40" height="3" rx="1" fill="#334155" />
+                <rect x="50" y="212" width="35" height="2" rx="1" fill="#94a3b8" />
+                <rect x="32" y="222" width="60" height="2" rx="1" fill="#e2e8f0" />
+                <rect x="32" y="226" width="50" height="2" rx="1" fill="#e2e8f0" />
+
+                <rect x="108" y="200" width="74" height="32" rx="3" fill="#f1f5f9" />
+                <rect x="114" y="206" width="14" height="7" rx="2" fill="#dcfce7" />
+                <rect x="114" y="208" width="8" height="4" rx="1" fill="#22c55e" />
+                <rect x="132" y="206" width="40" height="3" rx="1" fill="#334155" />
+                <rect x="132" y="212" width="35" height="2" rx="1" fill="#94a3b8" />
+                <rect x="114" y="222" width="60" height="2" rx="1" fill="#e2e8f0" />
+                <rect x="114" y="226" width="50" height="2" rx="1" fill="#e2e8f0" />
+
+                <rect x="26" y="240" width="74" height="32" rx="3" fill="#f1f5f9" />
+                <rect x="32" y="246" width="14" height="7" rx="2" fill="#fef3c7" />
+                <rect x="32" y="248" width="8" height="4" rx="1" fill="#f59e0b" />
+                <rect x="50" y="246" width="40" height="3" rx="1" fill="#334155" />
+                <rect x="50" y="252" width="35" height="2" rx="1" fill="#94a3b8" />
+                <rect x="32" y="262" width="60" height="2" rx="1" fill="#e2e8f0" />
+                <rect x="32" y="266" width="50" height="2" rx="1" fill="#e2e8f0" />
+
+                <rect x="108" y="240" width="74" height="32" rx="3" fill="#f1f5f9" />
+                <rect x="114" y="246" width="14" height="7" rx="2" fill="#fce7f3" />
+                <rect x="114" y="248" width="8" height="4" rx="1" fill="#ec4899" />
+                <rect x="132" y="246" width="40" height="3" rx="1" fill="#334155" />
+                <rect x="132" y="252" width="35" height="2" rx="1" fill="#94a3b8" />
+                <rect x="114" y="262" width="60" height="2" rx="1" fill="#e2e8f0" />
+                <rect x="114" y="266" width="50" height="2" rx="1" fill="#e2e8f0" />
+
+                {/* Mobile CTA */}
+                <rect x="16" y="286" width="168" height="40" fill="#2563eb" />
+                <rect x="36" y="296" width="100" height="6" rx="1" fill="#ffffff" />
+                <text x="37" y="301" fontSize="5" fill="#ffffff" fontFamily="system-ui">Solicita tu cotización</text>
+                <rect x="36" y="308" width="80" height="4" rx="1" fill="#93c5fd" />
+
+                {/* Mobile Footer */}
+                <rect x="16" y="332" width="168" height="40" fill="#1e293b" />
+                <rect x="26" y="342" width="30" height="5" rx="1" fill="#475569" />
+                <rect x="26" y="350" width="50" height="3" rx="1" fill="#334155" />
+                <rect x="26" y="356" width="40" height="3" rx="1" fill="#334155" />
+
+                {/* Bottom nav */}
+                <rect x="16" y="378" width="168" height="26" fill="#ffffff" stroke="#e2e8f0" strokeWidth="0.5" />
+                <rect x="30" y="383" width="16" height="10" rx="2" fill="#dbeafe" />
+                <rect x="30" y="385" width="10" height="6" rx="1" fill="#3b82f6" />
+                <rect x="62" y="385" width="16" height="6" rx="2" fill="#f1f5f9" />
+                <rect x="94" y="385" width="16" height="6" rx="2" fill="#f1f5f9" />
+                <rect x="126" y="385" width="16" height="6" rx="2" fill="#f1f5f9" />
+                <rect x="154" y="385" width="16" height="6" rx="2" fill="#f1f5f9" />
+
+                {/* Home indicator */}
+                <rect x="68" y="400" width="64" height="3" rx="1.5" fill="#1e293b" />
               </svg>
             </div>
           </div>
