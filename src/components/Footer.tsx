@@ -5,10 +5,8 @@ export default function Footer() {
       <div className="relative max-w-7xl mx-auto">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div className="lg:col-span-2">
-            <a href="#" className="text-xl font-bold tracking-tight">
-              <span className="text-[#1c1917]">Dib</span>
-              <span className="gradient-text">Web</span>
-              <span className="text-[#1c1917]/30 text-sm font-light ml-1">Studio</span>
+            <a href="#" className="flex items-center">
+              <img src="/logo.svg" alt="DibWeb Studio" className="h-10 w-auto" />
             </a>
             <p className="mt-4 text-[#1c1917]/40 text-sm max-w-xs leading-relaxed">
               Creamos páginas web modernas y efectivas que ayudan a tu negocio a crecer en el mundo digital.
