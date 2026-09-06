@@ -150,6 +150,9 @@ export default function Contact() {
                     placeholder="Cuéntanos sobre tu proyecto..."
                   />
                 </div>
+                <div style={{ position: "absolute", left: "-9999px" }} aria-hidden="true">
+                  <input type="text" name="website" tabIndex={-1} autoComplete="off" />
+                </div>
                 {error && <p className="text-red-400 text-sm">{error}</p>}
                 <button
                   type="submit"
