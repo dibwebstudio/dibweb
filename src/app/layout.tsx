@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "DidWeb - Desarrollo Web Profesional",
+  title: "DibWeb - Desarrollo Web Profesional",
   description:
     "Creamos páginas web modernas, rápidas y optimizadas para convertir visitantes en clientes. Landing pages, sitios corporativos, e-commerce y más.",
 };

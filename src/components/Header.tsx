@@ -10,7 +10,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <a href="#" className="text-xl font-bold text-gray-900">
-            DidWeb<span className="text-blue-600">.</span>
+            DibWeb<span className="text-blue-600">.</span>
           </a>
 
           <nav className="hidden md:flex items-center gap-8">

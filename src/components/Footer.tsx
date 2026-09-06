@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div className="lg:col-span-2">
             <a href="#" className="text-xl font-bold text-gray-900">
-              DidWeb<span className="text-blue-600">.</span>
+              DibWeb<span className="text-blue-600">.</span>
             </a>
             <p className="mt-4 text-gray-500 text-sm max-w-xs leading-relaxed">
               Creamos páginas web modernas y efectivas que ayudan a tu negocio
@@ -26,7 +26,7 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-gray-900 text-sm mb-4">Contacto</h4>
             <ul className="space-y-2.5">
-              <li><a href="mailto:hola@didweb.com" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">hola@didweb.com</a></li>
+              <li><a href="mailto:hola@dibweb.com" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">hola@dibweb.com</a></li>
               <li><a href="tel:+541112345678" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">+54 11 1234-5678</a></li>
               <li><span className="text-sm text-gray-500">Buenos Aires, Argentina</span></li>
             </ul>
@@ -35,7 +35,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-200 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-gray-400">
-            &copy; {new Date().getFullYear()} DidWeb. Todos los derechos reservados.
+            &copy; {new Date().getFullYear()} DibWeb. Todos los derechos reservados.
           </p>
           <div className="flex items-center gap-6">
             <a href="#" className="text-gray-400 hover:text-gray-600 transition-colors">
