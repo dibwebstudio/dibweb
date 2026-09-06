@@ -14,7 +14,7 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-white text-sm mb-4">Servicios</h4>
             <ul className="space-y-2.5">
-              {["Landing Pages", "Corporativos", "E-commerce", "SEO & Marketing"].map((s) => (
+              {["Landing Pages", "Corporativos", "E-commerce", "SEO & Marketing", "Meta Ads", "Sistemas ERP"].map((s) => (
                 <li key={s}><a href="#servicios" className="text-sm text-slate-400 hover:text-white transition-colors">{s}</a></li>
               ))}
             </ul>
@@ -31,6 +31,8 @@ export default function Footer() {
         <div className="border-t border-slate-800 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-slate-500">&copy; {new Date().getFullYear()} DibWeb Studio. Todos los derechos reservados.</p>
           <div className="flex items-center gap-6">
+            <a href="/politicas" className="text-slate-500 hover:text-white transition-colors text-sm">Privacidad</a>
+            <a href="/terminos" className="text-slate-500 hover:text-white transition-colors text-sm">Términos</a>
             <a href="#" className="text-slate-500 hover:text-white transition-colors">
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" /></svg>
             </a>
