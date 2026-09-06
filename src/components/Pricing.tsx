@@ -13,6 +13,7 @@ const plans = [
     ],
     cta: "Empezar",
     popular: false,
+    accent: "text-violet-400",
   },
   {
     name: "Profesional",
@@ -30,6 +31,7 @@ const plans = [
     ],
     cta: "Más popular",
     popular: true,
+    accent: "text-fuchsia-400",
   },
   {
     name: "Enterprise",
@@ -48,6 +50,7 @@ const plans = [
     ],
     cta: "Contactar",
     popular: false,
+    accent: "text-indigo-400",
   },
 ];
 
@@ -57,7 +60,7 @@ export default function Pricing() {
       <div className="absolute inset-0 mesh-gradient opacity-50" />
       <div className="relative max-w-7xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <p className="text-violet-400 font-medium text-sm mb-3 tracking-wide uppercase">
+          <p className="text-fuchsia-400 font-medium text-sm mb-3 tracking-wide uppercase">
             Precios
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold text-white">
@@ -75,15 +78,15 @@ export default function Pricing() {
               className={`relative rounded-2xl p-8 transition-all duration-300 ${
                 plan.popular
                   ? "glass-strong glow scale-[1.02]"
-                  : "glass-card hover:bg-white/[0.06]"
+                  : "glass-card"
               }`}
             >
               {plan.popular && (
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-violet-500 text-white text-xs font-medium px-4 py-1 rounded-full">
+                <span className="absolute -top-3 left-1/2 -translate-x-1/2 btn-primary text-white text-xs font-medium px-4 py-1 rounded-full">
                   Más popular
                 </span>
               )}
-              <h3 className="text-xl font-semibold text-white mb-2">
+              <h3 className={`text-xl font-semibold mb-2 ${plan.accent}`}>
                 {plan.name}
               </h3>
               <p className="text-white/40 text-sm mb-6 min-h-[40px]">
@@ -96,7 +99,7 @@ export default function Pricing() {
               <ul className="space-y-3 mb-8">
                 {plan.features.map((feature) => (
                   <li key={feature} className="flex items-start gap-3 text-sm text-white/50">
-                    <svg className="w-5 h-5 text-violet-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className={`w-5 h-5 ${plan.accent} shrink-0 mt-0.5`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     {feature}
@@ -107,8 +110,8 @@ export default function Pricing() {
                 href="#contacto"
                 className={`block w-full text-center py-3 rounded-full text-sm font-medium transition-all duration-300 ${
                   plan.popular
-                    ? "bg-white text-black hover:bg-white/90"
-                    : "glass-card text-white hover:bg-white/10"
+                    ? "btn-primary text-white"
+                    : "btn-secondary text-white"
                 }`}
               >
                 {plan.cta}
