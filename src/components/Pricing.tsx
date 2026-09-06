@@ -56,17 +56,16 @@ const plans = [
 
 export default function Pricing() {
   return (
-    <section id="precios" className="relative py-24 px-4 sm:px-6 lg:px-8">
-      <div className="absolute inset-0 mesh-gradient opacity-50" />
-      <div className="relative max-w-7xl mx-auto">
+    <section id="precios" className="relative py-24 px-4 sm:px-6 lg:px-8 bg-white">
+      <div className="max-w-7xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <p className="text-blue-700 font-medium text-sm mb-3 tracking-wide uppercase">
             Precios
           </p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#1e293b]">
+          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
             Planes transparentes
           </h2>
-          <p className="mt-4 text-[#1e293b]/50 text-lg">
+          <p className="mt-4 text-slate-500 text-lg">
             Sin costos ocultos. Elegí el plan que mejor se adapte a tu negocio.
           </p>
         </div>
@@ -75,28 +74,28 @@ export default function Pricing() {
           {plans.map((plan) => (
             <div
               key={plan.name}
-              className={`relative rounded-2xl p-8 transition-all duration-300 ${
+              className={`relative rounded-lg p-8 transition-all duration-300 ${
                 plan.popular ? "glass-strong glow scale-[1.02]" : "glass-card"
               }`}
             >
               {plan.popular && (
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 btn-primary text-white text-xs font-medium px-4 py-1 rounded-full">
+                <span className="absolute -top-3 left-1/2 -translate-x-1/2 btn-primary text-white text-xs font-medium px-4 py-1 rounded">
                   Más popular
                 </span>
               )}
               <h3 className={`text-xl font-semibold mb-2 ${plan.accent}`}>
                 {plan.name}
               </h3>
-              <p className="text-[#1e293b]/50 text-sm mb-6 min-h-[40px]">
+              <p className="text-slate-500 text-sm mb-6 min-h-[40px]">
                 {plan.description}
               </p>
               <div className="mb-8">
-                <span className="text-4xl font-bold text-[#1e293b]">${plan.price}</span>
-                <span className="text-[#1e293b]/40 text-sm ml-1">USD</span>
+                <span className="text-4xl font-bold text-slate-900">${plan.price}</span>
+                <span className="text-slate-400 text-sm ml-1">USD</span>
               </div>
               <ul className="space-y-3 mb-8">
                 {plan.features.map((feature) => (
-                  <li key={feature} className="flex items-start gap-3 text-sm text-[#1e293b]/60">
+                  <li key={feature} className="flex items-start gap-3 text-sm text-slate-600">
                     <svg className={`w-5 h-5 ${plan.accent} shrink-0 mt-0.5`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
@@ -106,7 +105,7 @@ export default function Pricing() {
               </ul>
               <a
                 href="#contacto"
-                className={`block w-full text-center py-3 rounded-full text-sm font-medium transition-all duration-300 ${
+                className={`block w-full text-center py-3 rounded text-sm font-medium transition-all duration-300 ${
                   plan.popular ? "btn-primary" : "btn-secondary"
                 }`}
               >
