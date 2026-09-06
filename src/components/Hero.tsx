@@ -393,24 +393,6 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="mt-20 grid grid-cols-2 lg:grid-cols-4 gap-4">
-          <div className="glass-card rounded-lg p-6 text-center">
-            <p className="text-3xl font-bold text-blue-400">150+</p>
-            <p className="text-xs text-slate-500 mt-2">Proyectos</p>
-          </div>
-          <div className="glass-card rounded-lg p-6 text-center">
-            <p className="text-3xl font-bold text-blue-400">98%</p>
-            <p className="text-xs text-slate-500 mt-2">Satisfacción</p>
-          </div>
-          <div className="glass-card rounded-lg p-6 text-center">
-            <p className="text-3xl font-bold text-blue-400">24h</p>
-            <p className="text-xs text-slate-500 mt-2">Respuesta</p>
-          </div>
-          <div className="glass-card rounded-lg p-6 text-center">
-            <p className="text-3xl font-bold text-blue-400">5+</p>
-            <p className="text-xs text-slate-500 mt-2">Experiencia</p>
-          </div>
-        </div>
       </div>
     </section>
   );

@@ -1,8 +1,11 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import TrustBar from "@/components/TrustBar";
 import Services from "@/components/Services";
 import Portfolio from "@/components/Portfolio";
+import WhyUs from "@/components/WhyUs";
 import Pricing from "@/components/Pricing";
+import CtaBanner from "@/components/CtaBanner";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -12,9 +15,12 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero />
+        <TrustBar />
         <Services />
         <Portfolio />
+        <WhyUs />
         <Pricing />
+        <CtaBanner />
         <Contact />
       </main>
       <Footer />
