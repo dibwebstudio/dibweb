@@ -2,23 +2,23 @@ export default function Hero() {
   return (
     <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="absolute inset-0 mesh-gradient" />
-      <div className="absolute top-10 left-[10%] w-[500px] h-[500px] bg-amber-200/15 rounded-full blur-[120px] animate-float" />
-      <div className="absolute bottom-10 right-[15%] w-[400px] h-[400px] bg-stone-200/20 rounded-full blur-[100px] animate-float-delayed" />
+      <div className="absolute top-10 left-[10%] w-[500px] h-[500px] bg-blue-200/15 rounded-full blur-[120px] animate-float" />
+      <div className="absolute bottom-10 right-[15%] w-[400px] h-[400px] bg-slate-200/20 rounded-full blur-[100px] animate-float-delayed" />
 
       <div className="relative max-w-7xl mx-auto">
         <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 glass-card px-4 py-1.5 rounded-full mb-8">
             <span className="w-2 h-2 bg-emerald-600 rounded-full animate-pulse" />
-            <span className="text-xs text-[#1c1917]/50 font-medium tracking-wide uppercase">Disponibilidad abierta</span>
+            <span className="text-xs text-[#1e293b]/50 font-medium tracking-wide uppercase">Disponibilidad abierta</span>
           </div>
 
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight">
-            <span className="text-[#1c1917]">Creamos tu presencia</span>
+            <span className="text-[#1e293b]">Creamos tu presencia</span>
             <br />
             <span className="gradient-text">digital</span>
           </h1>
 
-          <p className="mt-8 text-lg text-[#1c1917]/50 max-w-2xl leading-relaxed">
+          <p className="mt-8 text-lg text-[#1e293b]/50 max-w-2xl leading-relaxed">
             Diseñamos y desarrollamos páginas web modernas, rápidas y optimizadas
             para convertir visitantes en clientes. Desde landing pages hasta
             plataformas completas.
@@ -43,7 +43,7 @@ export default function Hero() {
           ].map((stat) => (
             <div key={stat.label} className="glass-card rounded-2xl p-6 text-center">
               <p className="text-3xl font-bold gradient-text">{stat.value}</p>
-              <p className="text-xs text-[#1c1917]/40 mt-2">{stat.label}</p>
+              <p className="text-xs text-[#1e293b]/40 mt-2">{stat.label}</p>
             </div>
           ))}
         </div>

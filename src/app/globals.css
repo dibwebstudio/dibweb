@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f8f7f4;
-  --foreground: #1c1917;
+  --background: #f0f4f8;
+  --foreground: #1e293b;
 }
 
 @theme inline {
@@ -46,44 +46,44 @@ body {
 
 .glass-card:hover {
   background: rgba(255, 255, 255, 0.75);
-  border-color: rgba(180, 140, 80, 0.25);
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.06), 0 0 0 1px rgba(255, 255, 255, 0.5);
+  border-color: rgba(59, 130, 246, 0.25);
+  box-shadow: 0 8px 40px rgba(59, 130, 246, 0.08), 0 0 0 1px rgba(255, 255, 255, 0.5);
 }
 
 .glow {
-  box-shadow: 0 0 60px rgba(180, 140, 80, 0.08), 0 0 120px rgba(180, 140, 80, 0.03);
+  box-shadow: 0 0 60px rgba(59, 130, 246, 0.1), 0 0 120px rgba(59, 130, 246, 0.04);
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #b8860b 0%, #c4942a 50%, #d4a843 100%);
+  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 50%, #60a5fa 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #1c1917 0%, #292524 50%, #44403c 100%);
-  color: #fafaf9;
+  background: linear-gradient(135deg, #1e40af 0%, #2563eb 50%, #3b82f6 100%);
+  color: #ffffff;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.3);
 }
 
 .btn-primary:hover {
-  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 6px 30px rgba(37, 99, 235, 0.4);
   transform: translateY(-2px);
 }
 
 .btn-secondary {
   background: rgba(255, 255, 255, 0.55);
-  border: 1px solid rgba(28, 25, 23, 0.12);
-  color: #1c1917;
+  border: 1px solid rgba(30, 41, 59, 0.12);
+  color: #1e293b;
   transition: all 0.3s ease;
 }
 
 .btn-secondary:hover {
   background: rgba(255, 255, 255, 0.85);
-  border-color: rgba(180, 140, 80, 0.3);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  border-color: rgba(59, 130, 246, 0.3);
+  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.1);
   transform: translateY(-1px);
 }
 
@@ -108,18 +108,18 @@ body {
 
 .divider-gradient {
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(180, 140, 80, 0.2), transparent);
+  background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.2), transparent);
 }
 
 .mesh-gradient {
   background:
-    radial-gradient(ellipse 60% 50% at 10% 20%, rgba(180, 140, 80, 0.06) 0%, transparent 50%),
-    radial-gradient(ellipse 50% 60% at 90% 10%, rgba(160, 120, 60, 0.05) 0%, transparent 50%),
-    radial-gradient(ellipse 40% 70% at 60% 90%, rgba(200, 160, 90, 0.04) 0%, transparent 50%),
-    radial-gradient(ellipse 70% 40% at 30% 70%, rgba(140, 110, 50, 0.03) 0%, transparent 50%);
+    radial-gradient(ellipse 60% 50% at 10% 20%, rgba(59, 130, 246, 0.07) 0%, transparent 50%),
+    radial-gradient(ellipse 50% 60% at 90% 10%, rgba(99, 150, 246, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse 40% 70% at 60% 90%, rgba(37, 99, 235, 0.05) 0%, transparent 50%),
+    radial-gradient(ellipse 70% 40% at 30% 70%, rgba(79, 140, 246, 0.04) 0%, transparent 50%);
 }
 
 .section-divider {
   height: 1px;
-  background: linear-gradient(90deg, transparent 0%, rgba(180, 140, 80, 0.12) 20%, rgba(180, 140, 80, 0.2) 50%, rgba(180, 140, 80, 0.12) 80%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, rgba(59, 130, 246, 0.15) 20%, rgba(59, 130, 246, 0.25) 50%, rgba(59, 130, 246, 0.15) 80%, transparent 100%);
 }

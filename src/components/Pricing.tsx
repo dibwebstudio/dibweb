@@ -13,7 +13,7 @@ const plans = [
     ],
     cta: "Empezar",
     popular: false,
-    accent: "text-stone-700",
+    accent: "text-slate-700",
   },
   {
     name: "Profesional",
@@ -31,7 +31,7 @@ const plans = [
     ],
     cta: "Más popular",
     popular: true,
-    accent: "text-amber-700",
+    accent: "text-blue-700",
   },
   {
     name: "Enterprise",
@@ -50,7 +50,7 @@ const plans = [
     ],
     cta: "Contactar",
     popular: false,
-    accent: "text-stone-600",
+    accent: "text-sky-700",
   },
 ];
 
@@ -60,13 +60,13 @@ export default function Pricing() {
       <div className="absolute inset-0 mesh-gradient opacity-50" />
       <div className="relative max-w-7xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <p className="text-amber-700 font-medium text-sm mb-3 tracking-wide uppercase">
+          <p className="text-blue-700 font-medium text-sm mb-3 tracking-wide uppercase">
             Precios
           </p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#1c1917]">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#1e293b]">
             Planes transparentes
           </h2>
-          <p className="mt-4 text-[#1c1917]/50 text-lg">
+          <p className="mt-4 text-[#1e293b]/50 text-lg">
             Sin costos ocultos. Elegí el plan que mejor se adapte a tu negocio.
           </p>
         </div>
@@ -87,16 +87,16 @@ export default function Pricing() {
               <h3 className={`text-xl font-semibold mb-2 ${plan.accent}`}>
                 {plan.name}
               </h3>
-              <p className="text-[#1c1917]/50 text-sm mb-6 min-h-[40px]">
+              <p className="text-[#1e293b]/50 text-sm mb-6 min-h-[40px]">
                 {plan.description}
               </p>
               <div className="mb-8">
-                <span className="text-4xl font-bold text-[#1c1917]">${plan.price}</span>
-                <span className="text-[#1c1917]/40 text-sm ml-1">USD</span>
+                <span className="text-4xl font-bold text-[#1e293b]">${plan.price}</span>
+                <span className="text-[#1e293b]/40 text-sm ml-1">USD</span>
               </div>
               <ul className="space-y-3 mb-8">
                 {plan.features.map((feature) => (
-                  <li key={feature} className="flex items-start gap-3 text-sm text-[#1c1917]/60">
+                  <li key={feature} className="flex items-start gap-3 text-sm text-[#1e293b]/60">
                     <svg className={`w-5 h-5 ${plan.accent} shrink-0 mt-0.5`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
