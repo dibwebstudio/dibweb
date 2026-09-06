@@ -1,5 +1,7 @@
 import Header from "@/components/Header";
+import ScrollProgress from "@/components/ScrollProgress";
 import Hero from "@/components/Hero";
+import Marquee from "@/components/Marquee";
 import TrustBar from "@/components/TrustBar";
 import Services from "@/components/Services";
 import Portfolio from "@/components/Portfolio";
@@ -17,8 +19,10 @@ export default function Home() {
         Saltar al contenido
       </a>
       <Header />
+      <ScrollProgress />
       <main id="contenido" className="flex-1">
         <Hero />
+        <Marquee />
         <TrustBar />
         <Services />
         <Portfolio />
