@@ -61,32 +61,31 @@ const services = [
 
 export default function Pricing() {
   return (
-    <section id="precios" className="relative py-24 px-4 sm:px-6 lg:px-8 bg-[#1e293b] aurora-bg">
-      <div className="aurora-blob aurora-blob-3" style={{ width: '250px', height: '250px', opacity: 0.1 }} />
+    <section id="precios" className="relative py-24 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <p className="text-blue-400 font-medium text-sm mb-3 tracking-wide">Precios</p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-white">Planes transparentes</h2>
-          <p className="mt-4 text-slate-400 text-lg">Sin costos ocultos. Todos los precios en pesos chilenos.</p>
+          <p className="text-blue-600 font-medium text-sm mb-3 tracking-wide">Precios</p>
+          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">Planes transparentes</h2>
+          <p className="mt-4 text-slate-600 text-lg">Sin costos ocultos. Todos los precios en pesos chilenos.</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-16">
           {plans.map((p) => (
-            <div key={p.name} className={`rounded-xl p-8 ${p.popular ? "bg-blue-500/10 border border-blue-500/30 aurora-card" : "glass-card aurora-card"}`}>
-              {p.popular && <span className="text-xs text-blue-400 font-medium mb-4 block">⭐ Más popular</span>}
-              <h3 className="text-xl font-semibold text-white mb-2">{p.name}</h3>
-              <p className="text-slate-400 text-sm mb-6">{p.desc}</p>
+            <div key={p.name} className={`rounded-2xl p-8 ${p.popular ? "bg-blue-50 border border-blue-200 aurora-card ring-1 ring-blue-200" : "glass-card aurora-card"}`}>
+              {p.popular && <span className="text-xs text-blue-600 font-medium mb-4 block">⭐ Más popular</span>}
+              <h3 className="text-xl font-semibold text-slate-900 mb-2">{p.name}</h3>
+              <p className="text-slate-500 text-sm mb-6">{p.desc}</p>
               <div className="mb-8">
-                <span className="text-sm text-slate-500">Desde</span>
+                <span className="text-sm text-slate-400">Desde</span>
                 <div className="flex items-baseline gap-1">
-                  <span className="text-4xl font-bold text-white">${p.price}</span>
+                  <span className="text-4xl font-bold text-slate-900">${p.price}</span>
                   <span className="text-slate-500 text-sm">CLP</span>
                 </div>
               </div>
               <ul className="space-y-3 mb-8">
                 {p.features.map((f) => (
-                  <li key={f} className="flex items-start gap-3 text-sm text-slate-300">
-                    <svg className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <li key={f} className="flex items-start gap-3 text-sm text-slate-600">
+                    <svg className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                     {f}
@@ -102,25 +101,25 @@ export default function Pricing() {
 
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-10">
-            <h3 className="text-2xl font-bold text-white">Servicios adicionales</h3>
-            <p className="text-slate-400 mt-2">Complementos para potenciar tu presencia digital</p>
+            <h3 className="text-2xl font-bold text-slate-900">Servicios adicionales</h3>
+            <p className="text-slate-500 mt-2">Complementos para potenciar tu presencia digital</p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {services.map((s) => (
               <div key={s.name} className="glass-card aurora-card rounded-xl p-5">
                 <div className="flex items-start gap-3">
-                  <div className="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center shrink-0">
-                    <svg className="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center shrink-0">
+                    <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d={s.icon} />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-white text-sm">{s.name}</h4>
+                    <h4 className="font-semibold text-slate-900 text-sm">{s.name}</h4>
                     <p className="text-slate-500 text-xs mt-0.5">{s.desc}</p>
                   </div>
                 </div>
-                <div className="mt-4 pt-4 border-t border-white/5">
-                  <span className="text-blue-400 font-bold text-lg">{s.price}</span>
+                <div className="mt-4 pt-4 border-t border-slate-100">
+                  <span className="text-blue-600 font-bold text-lg">{s.price}</span>
                 </div>
               </div>
             ))}

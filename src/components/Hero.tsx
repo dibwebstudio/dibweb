@@ -2,8 +2,8 @@
 
 export default function Hero() {
   return (
-    <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-[#0f172a] aurora-bg">
-      <div className="absolute inset-0 bg-gradient-to-b from-[#1e293b] to-[#0f172a]" />
+    <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-white aurora-bg">
+      <div className="absolute inset-0 bg-gradient-to-b from-blue-50/60 to-white" />
       <div className="aurora-blob aurora-blob-1" />
       <div className="aurora-blob aurora-blob-2" />
       <div className="aurora-blob aurora-blob-3" />
@@ -11,24 +11,24 @@ export default function Hero() {
       <div className="relative max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <div className="inline-flex items-center gap-2 bg-slate-800 border border-slate-700 px-4 py-1.5 rounded mb-8">
+            <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 px-4 py-1.5 rounded-full mb-8">
               <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
-              <span className="text-xs text-slate-400 font-medium">Disponibilidad abierta</span>
+              <span className="text-xs font-medium text-blue-700">Disponibilidad abierta</span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-white">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-slate-900">
               Creamos tu presencia
               <br />
-              <span className="text-blue-400">digital</span>
+              <span className="gradient-text">digital</span>
             </h1>
 
-            <p className="mt-6 text-lg text-slate-400 max-w-xl leading-relaxed">
+            <p className="mt-6 text-lg text-slate-600 max-w-xl leading-relaxed">
               Diseñamos y desarrollamos páginas web modernas, rápidas y optimizadas
               para convertir visitantes en clientes.
             </p>
 
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
-              <a href="#contacto" className="btn-primary px-8 py-4 rounded-lg text-sm font-semibold text-center">
+              <a href="#contacto" className="btn-primary px-8 py-4 rounded-lg text-sm font-semibold text-center shadow-sm">
                 Solicitar cotización
               </a>
               <a href="#portfolio" className="btn-secondary px-8 py-4 rounded-lg text-sm font-semibold text-center">

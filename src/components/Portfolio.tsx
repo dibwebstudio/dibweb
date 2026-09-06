@@ -1,28 +1,28 @@
 export default function Portfolio() {
   return (
-    <section id="portfolio" className="relative py-24 px-4 sm:px-6 lg:px-8 bg-[#0f172a]">
+    <section id="portfolio" className="relative py-24 px-4 sm:px-6 lg:px-8 bg-slate-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <p className="text-blue-400 font-medium text-sm mb-3 tracking-wide">Portfolio</p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-white">Proyectos recientes</h2>
-          <p className="mt-4 text-slate-400 text-lg">Así lucen los sitios que hemos creado para nuestros clientes.</p>
+          <p className="text-blue-600 font-medium text-sm mb-3 tracking-wide">Portfolio</p>
+          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">Proyectos recientes</h2>
+          <p className="mt-4 text-slate-600 text-lg">Así lucen los sitios que hemos creado para nuestros clientes.</p>
         </div>
 
         <div className="space-y-16">
           {/* Project 1 - goesca.store */}
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div className="order-2 lg:order-1">
-              <span className="inline-block bg-blue-500/10 text-blue-400 text-xs font-medium px-3 py-1 rounded-full mb-4">E-commerce</span>
-              <h3 className="text-2xl font-bold text-white mb-3">Goesca Store</h3>
-              <p className="text-slate-400 mb-6 leading-relaxed">
+              <span className="inline-block bg-blue-100 text-blue-700 text-xs font-medium px-3 py-1 rounded-full mb-4">E-commerce</span>
+              <h3 className="text-2xl font-bold text-slate-900 mb-3">Goesca Store</h3>
+              <p className="text-slate-600 mb-6 leading-relaxed">
                 Tienda online de artículos de aseo para hogar, negocio y empresa. Incluye catálogo de productos, carrito de compras, pasarela de pagos y panel de administración.
               </p>
               <div className="flex flex-wrap gap-2 mb-6">
                 {["Next.js", "React", "Tailwind CSS", "TypeScript"].map((t) => (
-                  <span key={t} className="text-xs bg-white/5 text-slate-400 px-3 py-1 rounded-full border border-white/5">{t}</span>
+                  <span key={t} className="text-xs bg-slate-100 text-slate-600 px-3 py-1 rounded-full border border-slate-200">{t}</span>
                 ))}
               </div>
-              <a href="https://goesca.store" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 text-sm font-medium transition-colors">
+              <a href="https://goesca.store" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 text-sm font-medium transition-colors">
                 Ver sitio →
               </a>
             </div>
@@ -64,17 +64,17 @@ export default function Portfolio() {
               </div>
             </div>
             <div>
-              <span className="inline-block bg-emerald-500/10 text-emerald-400 text-xs font-medium px-3 py-1 rounded-full mb-4">Software POS</span>
-              <h3 className="text-2xl font-bold text-white mb-3">Sistema de Cajero</h3>
-              <p className="text-slate-400 mb-6 leading-relaxed">
+              <span className="inline-block bg-emerald-100 text-emerald-700 text-xs font-medium px-3 py-1 rounded-full mb-4">Software POS</span>
+              <h3 className="text-2xl font-bold text-slate-900 mb-3">Sistema de Cajero</h3>
+              <p className="text-slate-600 mb-6 leading-relaxed">
                 Sistema de punto de venta para tiendas de retail. Se crean a medida según las necesidades de tu negocio, o puedes arrendarlo mensualmente. Control de inventario, múltiples medios de pago, reportes de ventas y facturación electrónica.
               </p>
               <div className="flex flex-wrap gap-2 mb-6">
                 {["Next.js", "React", "Tailwind CSS", "POS Integration"].map((t) => (
-                  <span key={t} className="text-xs bg-white/5 text-slate-400 px-3 py-1 rounded-full border border-white/5">{t}</span>
+                  <span key={t} className="text-xs bg-slate-100 text-slate-600 px-3 py-1 rounded-full border border-slate-200">{t}</span>
                 ))}
               </div>
-              <a href="/servicios/puntos-de-pago" className="text-blue-400 hover:text-blue-300 text-sm font-medium transition-colors">
+              <a href="/servicios/puntos-de-pago" className="text-blue-600 hover:text-blue-700 text-sm font-medium transition-colors">
                 Ver más detalles →
               </a>
             </div>
@@ -83,14 +83,14 @@ export default function Portfolio() {
           {/* Project 3 */}
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div className="order-2 lg:order-1">
-              <span className="inline-block bg-emerald-500/10 text-emerald-400 text-xs font-medium px-3 py-1 rounded-full mb-4">Corporativo</span>
-              <h3 className="text-2xl font-bold text-white mb-3">TechCorp Solutions</h3>
-              <p className="text-slate-400 mb-6 leading-relaxed">
+              <span className="inline-block bg-emerald-100 text-emerald-700 text-xs font-medium px-3 py-1 rounded-full mb-4">Corporativo</span>
+              <h3 className="text-2xl font-bold text-slate-900 mb-3">TechCorp Solutions</h3>
+              <p className="text-slate-600 mb-6 leading-relaxed">
                 Sitio institucional B2B con sección de servicios, casos de éxito, blog corporativo y formulario de contacto con CRM integrado.
               </p>
               <div className="flex flex-wrap gap-2">
                 {["React", "Node.js", "PostgreSQL", "Docker"].map((t) => (
-                  <span key={t} className="text-xs bg-white/5 text-slate-400 px-3 py-1 rounded-full border border-white/5">{t}</span>
+                  <span key={t} className="text-xs bg-slate-100 text-slate-600 px-3 py-1 rounded-full border border-slate-200">{t}</span>
                 ))}
               </div>
             </div>
