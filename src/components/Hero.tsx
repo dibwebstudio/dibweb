@@ -130,18 +130,23 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="mt-20 grid grid-cols-2 sm:grid-cols-4 gap-6">
-          {[
-            { value: "150+", label: "Proyectos entregados" },
-            { value: "98%", label: "Clientes satisfechos" },
-            { value: "24h", label: "Tiempo de respuesta" },
-            { value: "5+", label: "Años de experiencia" },
-          ].map((stat) => (
-            <div key={stat.label} className="glass-card rounded-lg p-6 text-center">
-              <p className="text-3xl font-bold text-blue-400">{stat.value}</p>
-              <p className="text-xs text-slate-500 mt-2">{stat.label}</p>
-            </div>
-          ))}
+        <div className="mt-20 grid grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="glass-card rounded-2xl p-6 text-center">
+            <p className="text-3xl font-bold text-blue-400">150+</p>
+            <p className="text-xs text-slate-500 mt-2">Proyectos entregados</p>
+          </div>
+          <div className="glass-card rounded-2xl p-6 text-center">
+            <p className="text-3xl font-bold text-blue-400">98%</p>
+            <p className="text-xs text-slate-500 mt-2">Clientes satisfechos</p>
+          </div>
+          <div className="glass-card rounded-2xl p-6 text-center">
+            <p className="text-3xl font-bold text-blue-400">24h</p>
+            <p className="text-xs text-slate-500 mt-2">Tiempo de respuesta</p>
+          </div>
+          <div className="glass-card rounded-2xl p-6 text-center">
+            <p className="text-3xl font-bold text-blue-400">5+</p>
+            <p className="text-xs text-slate-500 mt-2">Años de experiencia</p>
+          </div>
         </div>
       </div>
     </section>

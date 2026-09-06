@@ -70,16 +70,16 @@ export default function Pricing() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-4 max-w-5xl mx-auto">
           {plans.map((plan) => (
             <div
               key={plan.name}
-              className={`relative rounded-lg p-8 transition-all duration-300 ${
-                plan.popular ? "glass-strong glow scale-[1.02]" : "glass-card"
+              className={`relative rounded-2xl p-8 transition-all duration-300 ${
+                plan.popular ? "glass-strong glow scale-[1.02] border-blue-500/30" : "glass-card"
               }`}
             >
               {plan.popular && (
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 btn-primary text-white text-xs font-medium px-4 py-1 rounded">
+                <span className="absolute -top-3 left-1/2 -translate-x-1/2 btn-primary text-white text-xs font-medium px-4 py-1 rounded-full">
                   Más popular
                 </span>
               )}
@@ -105,7 +105,7 @@ export default function Pricing() {
               </ul>
               <a
                 href="#contacto"
-                className={`block w-full text-center py-3 rounded text-sm font-medium transition-all duration-300 ${
+                className={`block w-full text-center py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
                   plan.popular ? "btn-primary" : "btn-secondary"
                 }`}
               >
