@@ -1,41 +1,27 @@
 export default function TrustBar() {
   return (
-    <section className="py-14 px-4 sm:px-6 lg:px-8 bg-slate-50 border-y border-slate-100">
+    <section className="py-14 px-4 sm:px-6 lg:px-8 bg-white border-y border-[#e7e5e0]">
       <div className="max-w-7xl mx-auto">
-        <p className="text-center text-slate-400 text-xs uppercase tracking-widest mb-8">Confían en nosotros</p>
-        <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-6">
-          {[
-            { name: "SSL Seguro", icon: "M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" },
-            { name: "Google Partner", icon: "M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" },
-            { name: "Meta Partner", icon: "M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" },
-            { name: "Tecnología Cloud", icon: "M13 10V3L4 14h7v7l9-11h-7z" },
-            { name: "Bases de Datos", icon: "M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" },
-          ].map((t) => (
-            <div key={t.name} className="flex items-center gap-2 text-slate-400 hover:text-slate-600 transition-colors">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d={t.icon} />
-              </svg>
-              <span className="text-sm font-medium">{t.name}</span>
-            </div>
+        <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4 text-neutral-500">
+          {["SSL incluido", "Diseño responsive", "SEO técnico", "Hosting gestionado", "Soporte en Chile"].map((t) => (
+            <span key={t} className="label flex items-center gap-2">
+              <span className="w-1 h-1 rounded-full bg-neutral-300" />
+              {t}
+            </span>
           ))}
         </div>
-        <div className="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-3xl mx-auto">
-          <div className="text-center">
-            <p className="text-3xl font-bold text-blue-600">150+</p>
-            <p className="text-xs text-slate-500 mt-1">Proyectos entregados</p>
-          </div>
-          <div className="text-center">
-            <p className="text-3xl font-bold text-blue-600">98%</p>
-            <p className="text-xs text-slate-500 mt-1">Clientes satisfechos</p>
-          </div>
-          <div className="text-center">
-            <p className="text-3xl font-bold text-blue-600">24h</p>
-            <p className="text-xs text-slate-500 mt-1">Tiempo de respuesta</p>
-          </div>
-          <div className="text-center">
-            <p className="text-3xl font-bold text-blue-600">5+</p>
-            <p className="text-xs text-slate-500 mt-1">Años de experiencia</p>
-          </div>
+        <div className="mt-12 grid grid-cols-2 lg:grid-cols-4 max-w-3xl mx-auto">
+          {[
+            { n: "150+", l: "Proyectos entregados" },
+            { n: "98%", l: "Clientes satisfechos" },
+            { n: "24h", l: "Tiempo de respuesta" },
+            { n: "5+", l: "Años de experiencia" },
+          ].map((s, i) => (
+            <div key={s.l} className={`text-center py-2 ${i > 0 ? "lg:border-l border-[#e7e5e0]" : ""}`}>
+              <p className="text-3xl font-semibold text-neutral-900 tabular-nums">{s.n}</p>
+              <p className="text-xs text-neutral-500 mt-1">{s.l}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

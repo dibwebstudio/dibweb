@@ -16,7 +16,7 @@ export default function PuntosDePago() {
         {/* Hero */}
         <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
-            <Link href="/#servicios" className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 text-sm mb-8 transition-colors">
+            <Link href="/#servicios" className="inline-flex items-center gap-2 text-neutral-600 hover:text-neutral-900 text-sm mb-8 transition-colors">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
@@ -26,13 +26,12 @@ export default function PuntosDePago() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <span className="inline-block text-blue-100 text-blue-700 text-xs font-medium px-3 py-1 rounded-full mb-4">Software POS</span>
-                <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-6 leading-tight">
+                <h1 className="text-4xl sm:text-5xl font-bold text-neutral-900 mb-6 leading-tight">
                   Puntos de venta<br />
-                  <span className="text-blue-600">modernos y rápidos</span>
+                  <span className="text-neutral-900">modernos y rápidos</span>
                 </h1>
-                <p className="text-slate-600 text-lg mb-8 leading-relaxed">
-                  Desarrollamos sistemas de punto de venta (POS) personalizados para tu negocio. 
-                  Cobros con efectivo, tarjeta, transferencia y múltiples medios de pago.
+                <p className="text-neutral-600 text-lg mb-8 leading-relaxed">
+                  Desarrollamos sistemas de punto de venta (POS) personalizados para tu negocio. Cobros con efectivo, tarjeta, transferencia y múltiples medios de pago. Disponible a medida o en arriendo mensual.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a href="#contacto" className="btn-primary px-8 py-4 rounded-lg text-sm font-semibold text-center">
@@ -56,7 +55,7 @@ export default function PuntosDePago() {
         {/* Features */}
         <section className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-3xl font-bold text-slate-900 text-center mb-12">Características del sistema</h2>
+            <h2 className="text-3xl font-bold text-neutral-900 text-center mb-12">Características del sistema</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 { title: "Múltiples medios de pago", desc: "Efectivo, tarjeta de crédito/débito, transferencia, QR y más.", icon: "M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" },
@@ -67,13 +66,13 @@ export default function PuntosDePago() {
                 { title: "Soporte 24/7", desc: "Asistencia técnica permanente para tu negocio.", icon: "M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" },
               ].map((f) => (
                 <div key={f.title} className="glass-card aurora-card rounded-xl p-6">
-                  <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-4">
-                    <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="w-12 h-12 rounded-xl bg-[#f5f4f1] flex items-center justify-center mb-4">
+                    <svg className="w-6 h-6 text-neutral-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d={f.icon} />
                     </svg>
                   </div>
-                  <h3 className="text-lg font-semibold text-slate-900 mb-2">{f.title}</h3>
-                  <p className="text-slate-600 text-sm">{f.desc}</p>
+                  <h3 className="text-lg font-semibold text-neutral-900 mb-2">{f.title}</h3>
+                  <p className="text-neutral-600 text-sm">{f.desc}</p>
                 </div>
               ))}
             </div>
@@ -83,29 +82,29 @@ export default function PuntosDePago() {
         {/* Pricing */}
         <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl font-bold text-slate-900 text-center mb-4">Planes del sistema POS</h2>
-            <p className="text-slate-600 text-center mb-12">Todos los precios en pesos chilenos.</p>
+            <h2 className="text-3xl font-bold text-neutral-900 text-center mb-4">Planes del sistema POS</h2>
+            <p className="text-neutral-600 text-center mb-12">Todos los precios en pesos chilenos.</p>
             <div className="grid md:grid-cols-3 gap-6">
               {[
                 { name: "Básico", price: "299.000", desc: "Una caja, funcionalidades esenciales.", features: ["1 caja registradora", "Efectivo y tarjeta", "Control de stock básico", "Reportes diarios", "Soporte email"], popular: false },
                 { name: "Profesional", price: "599.000", desc: "Multi-caja y reportes avanzados.", features: ["Hasta 5 cajas", "Todos los medios de pago", "Control de stock avanzado", "Reportes completos", "Facturación electrónica", "Soporte prioritario"], popular: true },
                 { name: "Enterprise", price: "999.000", desc: "Solución completa para retail.", features: ["Cajas ilimitadas", "Multi-sucursal", "API integraciones", "Dashboard en tiempo real", "Soporte 24/7", "Capacitación incluida"], popular: false },
               ].map((p) => (
-                <div key={p.name} className={`rounded-xl p-8 ${p.popular ? "bg-blue-50 border border-blue-200 aurora-card" : "glass-card aurora-card"}`}>
-                  {p.popular && <span className="text-xs text-blue-600 font-medium mb-4 block">⭐ Más popular</span>}
-                  <h3 className="text-xl font-semibold text-slate-900 mb-2">{p.name}</h3>
-                  <p className="text-slate-600 text-sm mb-6">{p.desc}</p>
+                <div key={p.name} className={`rounded-xl p-8 ${p.popular ? "bg-white border-2 border-neutral-900 shadow-sm" : "glass-card aurora-card"}`}>
+                  {p.popular && <span className="text-xs label mb-4 block !text-neutral-900">Recomendado</span>}
+                  <h3 className="text-xl font-semibold text-neutral-900 mb-2">{p.name}</h3>
+                  <p className="text-neutral-600 text-sm mb-6">{p.desc}</p>
                   <div className="mb-8">
-                    <span className="text-sm text-slate-500">Desde</span>
+                    <span className="text-sm text-neutral-500">Desde</span>
                     <div className="flex items-baseline gap-1">
-                      <span className="text-4xl font-bold text-slate-900">${p.price}</span>
-                      <span className="text-slate-500 text-sm">CLP</span>
+                      <span className="text-4xl font-bold text-neutral-900">${p.price}</span>
+                      <span className="text-neutral-500 text-sm">CLP</span>
                     </div>
                   </div>
                   <ul className="space-y-3 mb-8">
                     {p.features.map((f) => (
-                      <li key={f} className="flex items-start gap-3 text-sm text-slate-600">
-                        <svg className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <li key={f} className="flex items-start gap-3 text-sm text-neutral-600">
+                        <svg className="w-5 h-5 text-neutral-700 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
                         {f}
@@ -125,8 +124,8 @@ export default function PuntosDePago() {
         <section className="py-16 px-4 sm:px-6 lg:px-8 bg-slate-50 aurora-bg">
           <div className="aurora-blob aurora-blob-2" style={{ width: '300px', height: '300px', opacity: 0.1 }} />
           <div className="max-w-3xl mx-auto text-center relative">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">¿Necesitas un sistema POS?</h2>
-            <p className="text-slate-600 mb-8">Cuéntanos sobre tu negocio y te diseñamos un sistema a medida.</p>
+            <h2 className="text-3xl font-bold text-neutral-900 mb-4">¿Necesitas un sistema POS?</h2>
+            <p className="text-neutral-600 mb-8">Cuéntanos sobre tu negocio y te diseñamos un sistema a medida.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="#contacto" className="btn-primary px-8 py-4 rounded-lg text-sm font-semibold">Solicitar cotización</a>
               <a href="https://wa.me/56949417183" target="_blank" rel="noopener noreferrer" className="btn-secondary px-8 py-4 rounded-lg text-sm font-semibold">WhatsApp</a>
@@ -145,20 +144,20 @@ function Contact() {
   return (
     <section id="contacto" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-2xl font-bold text-slate-900 mb-8 text-center">Contáctanos</h2>
+        <h2 className="text-2xl font-bold text-neutral-900 mb-8 text-center">Contáctanos</h2>
         <div className="glass-card rounded-xl p-8">
           <form className="space-y-5">
             <div>
-              <label className="block text-sm font-medium text-slate-600 mb-1.5">Nombre</label>
-              <input type="text" required className="w-full px-4 py-3 rounded-lg bg-white border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 placeholder:text-slate-400" placeholder="Tu nombre" />
+              <label className="block text-sm font-medium text-neutral-600 mb-1.5">Nombre</label>
+              <input type="text" required className="w-full px-4 py-3 rounded-lg bg-white border border-neutral-300 text-neutral-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 placeholder:text-neutral-400" placeholder="Tu nombre" />
             </div>
             <div>
-              <label className="block text-sm font-medium text-slate-600 mb-1.5">Email</label>
-              <input type="email" required className="w-full px-4 py-3 rounded-lg bg-white border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 placeholder:text-slate-400" placeholder="tu@email.com" />
+              <label className="block text-sm font-medium text-neutral-600 mb-1.5">Email</label>
+              <input type="email" required className="w-full px-4 py-3 rounded-lg bg-white border border-neutral-300 text-neutral-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 placeholder:text-neutral-400" placeholder="tu@email.com" />
             </div>
             <div>
-              <label className="block text-sm font-medium text-slate-600 mb-1.5">Mensaje</label>
-              <textarea required rows={4} className="w-full px-4 py-3 rounded-lg bg-white border border-slate-300 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 resize-none placeholder:text-slate-400" placeholder="Cuéntanos sobre tu negocio..." />
+              <label className="block text-sm font-medium text-neutral-600 mb-1.5">Mensaje</label>
+              <textarea required rows={4} className="w-full px-4 py-3 rounded-lg bg-white border border-neutral-300 text-neutral-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 resize-none placeholder:text-neutral-400" placeholder="Cuéntanos sobre tu negocio..." />
             </div>
             <button type="submit" className="w-full btn-primary py-3 rounded-lg text-sm font-semibold">Enviar mensaje</button>
           </form>

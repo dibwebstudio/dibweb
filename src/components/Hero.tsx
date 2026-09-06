@@ -2,39 +2,36 @@
 
 export default function Hero() {
   return (
-    <section className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-white aurora-bg">
-      <div className="absolute inset-0 bg-gradient-to-b from-blue-50/60 to-white" />
-      <div className="aurora-blob aurora-blob-1" />
-      <div className="aurora-blob aurora-blob-2" />
-      <div className="aurora-blob aurora-blob-3" />
-
+    <section className="relative pt-36 pb-24 px-4 sm:px-6 lg:px-8 overflow-hidden bg-[#faf9f7]">
       <div className="relative max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 px-4 py-1.5 rounded-full mb-8">
-              <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
-              <span className="text-xs font-medium text-blue-700">Disponibilidad abierta</span>
-            </div>
+            <p className="label mb-6">Estudio de desarrollo web · Santiago de Chile</p>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-slate-900">
-              Creamos tu presencia
-              <br />
-              <span className="gradient-text">digital</span>
+            <h1 className="text-4xl sm:text-5xl lg:text-[3.6rem] leading-[1.08] text-neutral-900">
+              Diseñamos sitios web que convierten visitas en ventas
             </h1>
 
-            <p className="mt-6 text-lg text-slate-600 max-w-xl leading-relaxed">
-              Diseñamos y desarrollamos páginas web modernas, rápidas y optimizadas
-              para convertir visitantes en clientes.
+            <p className="mt-6 text-lg text-neutral-600 max-w-xl leading-relaxed">
+              Desarrollamos páginas web, tiendas online y sistemas de punto de venta a medida.
+              Trabajo de calidad, entregas a tiempo y soporte real después del lanzamiento.
             </p>
 
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
-              <a href="#contacto" className="btn-primary px-8 py-4 rounded-lg text-sm font-semibold text-center shadow-sm">
+              <a href="#contacto" className="btn-primary px-8 py-4 rounded-full text-sm font-semibold text-center">
                 Solicitar cotización
               </a>
-              <a href="#portfolio" className="btn-secondary px-8 py-4 rounded-lg text-sm font-semibold text-center">
+              <a href="#portfolio" className="btn-secondary px-8 py-4 rounded-full text-sm font-semibold text-center">
                 Ver trabajos
               </a>
             </div>
+
+            <p className="mt-8 text-sm text-neutral-500 flex items-center gap-2">
+              <svg className="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+              Respuesta en menos de 24 horas, sin compromiso
+            </p>
           </div>
 
           <div className="relative flex justify-center lg:justify-end items-end gap-4 lg:gap-6">

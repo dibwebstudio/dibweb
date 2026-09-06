@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import TrustBar from "@/components/TrustBar";
 import Services from "@/components/Services";
 import Portfolio from "@/components/Portfolio";
+import Process from "@/components/Process";
 import WhyUs from "@/components/WhyUs";
 import Pricing from "@/components/Pricing";
 import CtaBanner from "@/components/CtaBanner";
@@ -21,6 +22,7 @@ export default function Home() {
         <TrustBar />
         <Services />
         <Portfolio />
+        <Process />
         <WhyUs />
         <Pricing />
         <CtaBanner />
