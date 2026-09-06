@@ -1,8 +1,10 @@
+import Reveal from "@/components/Reveal";
+
 export default function WhyUs() {
   return (
     <section className="py-28 px-4 sm:px-6 lg:px-8 bg-[#faf9f7]">
       <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <Reveal><div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <p className="label mb-4">¿Por qué nosotros?</p>
             <h2 className="text-3xl sm:text-4xl text-neutral-900 leading-tight mb-6">
@@ -46,7 +48,7 @@ export default function WhyUs() {
               </div>
             ))}
           </div>
-        </div>
+        </div></Reveal>
       </div>
     </section>
   );

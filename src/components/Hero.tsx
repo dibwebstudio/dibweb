@@ -1,40 +1,48 @@
 "use client";
 
+import Reveal from "@/components/Reveal";
+
 export default function Hero() {
   return (
     <section className="relative pt-36 pb-24 px-4 sm:px-6 lg:px-8 overflow-hidden bg-[#faf9f7]">
       <div className="relative max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-14 items-center">
           <div>
-            <p className="label mb-6">Estudio de desarrollo web · Santiago de Chile</p>
+            <Reveal>
+              <p className="label mb-6">Estudio de desarrollo web · Santiago de Chile</p>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-[3.6rem] leading-[1.08] text-neutral-900">
-              Diseñamos sitios web que convierten visitas en ventas
-            </h1>
+              <h1 className="text-5xl sm:text-6xl lg:text-[4.25rem] leading-[1.05] text-neutral-900">
+                Sitios web que
+                <br />
+                <span className="accent-italic">convierten</span> visitas
+                <br />
+                en ventas
+              </h1>
 
-            <p className="mt-6 text-lg text-neutral-600 max-w-xl leading-relaxed">
-              Desarrollamos páginas web, tiendas online y sistemas de punto de venta a medida.
-              Trabajo de calidad, entregas a tiempo y soporte real después del lanzamiento.
-            </p>
+              <p className="mt-7 text-lg lg:text-xl text-neutral-600 max-w-xl leading-relaxed">
+                Desarrollamos páginas web, tiendas online y sistemas de punto de venta a medida.
+                Trabajo de calidad, entregas a tiempo y soporte real después del lanzamiento.
+              </p>
 
-            <div className="mt-10 flex flex-col sm:flex-row gap-4">
-              <a href="#contacto" className="btn-primary px-8 py-4 rounded-full text-sm font-semibold text-center">
-                Solicitar cotización
-              </a>
-              <a href="#portfolio" className="btn-secondary px-8 py-4 rounded-full text-sm font-semibold text-center">
-                Ver trabajos
-              </a>
-            </div>
+              <div className="mt-10 flex flex-col sm:flex-row gap-4">
+                <a href="#contacto" className="btn-primary px-9 py-4 rounded-full text-sm font-semibold text-center">
+                  Solicitar cotización
+                </a>
+                <a href="#portfolio" className="btn-secondary px-9 py-4 rounded-full text-sm font-semibold text-center">
+                  Ver trabajos
+                </a>
+              </div>
 
-            <p className="mt-8 text-sm text-neutral-500 flex items-center gap-2">
-              <svg className="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-              </svg>
-              Respuesta en menos de 24 horas, sin compromiso
-            </p>
+              <p className="mt-9 text-sm text-neutral-500 flex items-center gap-2">
+                <svg className="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                Respuesta en menos de 24 horas, sin compromiso
+              </p>
+            </Reveal>
           </div>
-
           <div className="relative flex justify-center lg:justify-end items-end gap-4 lg:gap-6">
+            <Reveal delay={200} className="contents">
             {/* Monitor - showing goesca.store */}
             <div className="group relative">
               <svg viewBox="0 0 640 480" className="w-full max-w-2xl transition-transform duration-500 group-hover:scale-[1.02]" xmlns="http://www.w3.org/2000/svg">
@@ -387,6 +395,7 @@ export default function Hero() {
                 <rect x="68" y="404" width="64" height="3" rx="1.5" fill="#fff" opacity="0.3" />
               </svg>
             </div>
+            </Reveal>
           </div>
         </div>
 

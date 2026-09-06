@@ -59,17 +59,19 @@ const services = [
   { name: "Hosting + Dominio", price: "Desde $15.000/año", desc: "Alojamiento y registro", icon: "M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" },
 ];
 
+import Reveal from "@/components/Reveal";
+
 export default function Pricing() {
   return (
     <section id="precios" className="relative py-24 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <Reveal><div className="text-center max-w-2xl mx-auto mb-16">
           <p className="label mb-4">Precios</p>
           <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900">Planes transparentes y a medida</h2>
           <p className="mt-4 text-neutral-600 text-lg">Planes estándar desde $120.000 CLP o soluciones personalizadas para tu negocio.</p>
-        </div>
+        </div></Reveal>
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-10">
+        <Reveal delay={100}><div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-10">
           {plans.map((p) => (
             <div key={p.name} className={`rounded-2xl p-8 ${p.popular ? "bg-white border-2 border-neutral-900 shadow-sm" : "glass-card aurora-card"}`}>
               {p.popular && <span className="label mb-4 block !text-neutral-900">Recomendado</span>}
@@ -97,10 +99,10 @@ export default function Pricing() {
               </a>
             </div>
           ))}
-        </div>
+        </div></Reveal>
 
         {/* Plan a medida */}
-        <div className="max-w-5xl mx-auto mb-16">
+        <Reveal delay={150}><div className="max-w-5xl mx-auto mb-16">
           <div className="relative rounded-2xl overflow-hidden bg-neutral-900 p-8 sm:p-10 aurora-card">
             
             <div className="relative grid md:grid-cols-2 gap-8 items-center">
@@ -135,9 +137,9 @@ export default function Pricing() {
               </div>
             </div>
           </div>
-        </div>
+        </div></Reveal>
 
-        <div className="max-w-5xl mx-auto">
+        <Reveal delay={200}><div className="max-w-5xl mx-auto">
           <div className="text-center mb-10">
             <h3 className="text-2xl font-bold text-neutral-900">Servicios adicionales</h3>
             <p className="text-neutral-500 mt-2">Complementos para potenciar tu presencia digital</p>
@@ -162,7 +164,7 @@ export default function Pricing() {
               </div>
             ))}
           </div>
-        </div>
+        </div></Reveal>
       </div>
     </section>
   );

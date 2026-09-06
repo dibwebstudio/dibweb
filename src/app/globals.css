@@ -108,3 +108,45 @@ h1, h2 {
 .aurora-blob-3 { width: 320px; height: 320px; background: #e2e8f0; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 
 .aurora-card::before { display: none; }
+
+/* Reveal on scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
+
+/* Selection */
+::selection {
+  background: #111111;
+  color: #faf9f7;
+}
+
+/* Nicer focus */
+:focus-visible {
+  outline: 2px solid #111111;
+  outline-offset: 3px;
+}
+
+/* Italic accent within serif headlines */
+.accent-italic {
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Smooth image zoom */
+.img-zoom {
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.group:hover .img-zoom {
+  transform: scale(1.03);
+}

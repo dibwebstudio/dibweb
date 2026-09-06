@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Reveal from "@/components/Reveal";
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
@@ -28,7 +29,7 @@ export default function Contact() {
   return (
     <section id="contacto" className="relative py-24 px-4 sm:px-6 lg:px-8 bg-white border-t border-[#e7e5e0]">
       <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12">
+        <Reveal><div className="grid lg:grid-cols-2 gap-12">
           <div>
             <p className="label mb-4">Contacto</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 mb-6">Hablemos de tu proyecto</h2>
@@ -100,7 +101,7 @@ export default function Contact() {
               </form>
             )}
           </div>
-        </div>
+        </div></Reveal>
       </div>
     </section>
   );

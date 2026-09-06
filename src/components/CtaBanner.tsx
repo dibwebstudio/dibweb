@@ -1,8 +1,10 @@
+import Reveal from "@/components/Reveal";
+
 export default function CtaBanner() {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#faf9f7]">
       <div className="max-w-6xl mx-auto">
-        <div className="rounded-3xl bg-neutral-900 px-8 py-16 sm:px-16 text-center">
+        <Reveal><div className="rounded-3xl bg-neutral-900 px-8 py-16 sm:py-20 sm:px-16 text-center">
           <p className="label !text-neutral-400 mb-5">Empecemos hoy</p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl text-white leading-tight mb-6">
             ¿Listo para hacer crecer tu negocio?
@@ -19,7 +21,7 @@ export default function CtaBanner() {
               Escribir por WhatsApp
             </a>
           </div>
-        </div>
+        </div></Reveal>
       </div>
     </section>
   );

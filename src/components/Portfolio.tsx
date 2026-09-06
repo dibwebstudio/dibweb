@@ -1,18 +1,19 @@
 import Image from "next/image";
+import Reveal from "@/components/Reveal";
 
 export default function Portfolio() {
   return (
     <section id="portfolio" className="relative py-24 px-4 sm:px-6 lg:px-8 bg-white border-y border-[#e7e5e0]">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <Reveal><div className="text-center max-w-2xl mx-auto mb-16">
           <p className="label mb-4">Portfolio</p>
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">Proyectos recientes</h2>
           <p className="mt-4 text-slate-600 text-lg">Casos reales con resultados medibles, no solo diseño bonito.</p>
-        </div>
+        </div></Reveal>
 
         <div className="space-y-16">
           {/* Project 1 - goesca.store */}
-          <div className="grid lg:grid-cols-2 gap-10 items-center">
+          <Reveal><div className="grid lg:grid-cols-2 gap-10 items-center group">
             <div className="order-2 lg:order-1">
               <span className="inline-block bg-neutral-100 text-neutral-700 text-xs font-medium px-3 py-1 rounded-full mb-4">E-commerce</span>
               <h3 className="text-2xl font-bold text-slate-900 mb-3">Goesca Store</h3>
@@ -56,13 +57,13 @@ export default function Portfolio() {
                 </div>
               </div>
             </div>
-          </div>
+          </div></Reveal>
 
           {/* Project 2 - POS System */}
-          <div className="grid lg:grid-cols-2 gap-10 items-center">
+          <Reveal><div className="grid lg:grid-cols-2 gap-10 items-center group">
             <div>
               <div className="glass-card rounded-xl overflow-hidden aurora-card">
-                <Image src="/pos.jpg" alt="Sistema Punto de Venta" width={1600} height={1000} className="w-full h-auto" loading="lazy" />
+                <Image src="/pos.jpg" alt="Sistema Punto de Venta" width={1600} height={1000} className="w-full h-auto img-zoom" loading="lazy" />
               </div>
             </div>
             <div>
@@ -80,10 +81,10 @@ export default function Portfolio() {
                 Ver más detalles →
               </a>
             </div>
-          </div>
+          </div></Reveal>
 
           {/* Project 3 */}
-          <div className="grid lg:grid-cols-2 gap-10 items-center">
+          <Reveal><div className="grid lg:grid-cols-2 gap-10 items-center group">
             <div className="order-2 lg:order-1">
               <span className="inline-block bg-neutral-100 text-neutral-700 text-xs font-medium px-3 py-1 rounded-full mb-4">Corporativo</span>
               <h3 className="text-2xl font-bold text-slate-900 mb-3">TechCorp Solutions</h3>
@@ -123,7 +124,7 @@ export default function Portfolio() {
                 </div>
               </div>
             </div>
-          </div>
+          </div></Reveal>
         </div>
       </div>
     </section>
