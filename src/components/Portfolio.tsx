@@ -18,7 +18,7 @@ export default function Portfolio() {
                 Tienda online de artículos de aseo para hogar, negocio y empresa. Incluye catálogo de productos, carrito de compras, pasarela de pagos y panel de administración.
               </p>
               <div className="flex flex-wrap gap-2 mb-6">
-                {["Next.js", "Supabase", "Tailwind CSS", "Vercel"].map((t) => (
+                {["Next.js", "React", "Tailwind CSS", "TypeScript"].map((t) => (
                   <span key={t} className="text-xs bg-white/5 text-slate-400 px-3 py-1 rounded-full border border-white/5">{t}</span>
                 ))}
               </div>
@@ -67,10 +67,10 @@ export default function Portfolio() {
               <span className="inline-block bg-emerald-500/10 text-emerald-400 text-xs font-medium px-3 py-1 rounded-full mb-4">Software POS</span>
               <h3 className="text-2xl font-bold text-white mb-3">Sistema de Cajero</h3>
               <p className="text-slate-400 mb-6 leading-relaxed">
-                Sistema de punto de venta para tiendas de retail. Control de inventario, múltiples medios de pago (efectivo, tarjeta), reportes de ventas y facturación electrónica.
+                Sistema de punto de venta para tiendas de retail. Se crean a medida según las necesidades de tu negocio, o puedes arrendarlo mensualmente. Control de inventario, múltiples medios de pago, reportes de ventas y facturación electrónica.
               </p>
               <div className="flex flex-wrap gap-2 mb-6">
-                {["Next.js", "Supabase", "Tailwind CSS", "POS Integration"].map((t) => (
+                {["Next.js", "React", "Tailwind CSS", "POS Integration"].map((t) => (
                   <span key={t} className="text-xs bg-white/5 text-slate-400 px-3 py-1 rounded-full border border-white/5">{t}</span>
                 ))}
               </div>
@@ -89,7 +89,7 @@ export default function Portfolio() {
                 Sitio institucional B2B con sección de servicios, casos de éxito, blog corporativo y formulario de contacto con CRM integrado.
               </p>
               <div className="flex flex-wrap gap-2">
-                {["React", "Node.js", "PostgreSQL", "Vercel"].map((t) => (
+                {["React", "Node.js", "PostgreSQL", "Docker"].map((t) => (
                   <span key={t} className="text-xs bg-white/5 text-slate-400 px-3 py-1 rounded-full border border-white/5">{t}</span>
                 ))}
               </div>
