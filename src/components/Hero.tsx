@@ -12,10 +12,10 @@ export default function Hero() {
             <Reveal>
               <p className="label mb-6">Estudio de desarrollo web · Santiago de Chile</p>
 
-              <h1 className="text-5xl sm:text-6xl lg:text-[4.25rem] leading-[1.05] text-neutral-900">
+              <h1 className="text-5xl sm:text-6xl lg:text-[4.5rem] leading-[1.02] text-neutral-900 tracking-tighter">
                 Sitios web que
                 <br />
-                <span className="accent-italic">convierten</span> visitas
+                <span className="accent-italic text-neutral-700">convierten</span> visitas
                 <br />
                 en ventas
               </h1>
