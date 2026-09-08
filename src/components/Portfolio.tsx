@@ -7,7 +7,7 @@ export default function Portfolio() {
       <div className="max-w-7xl mx-auto">
         <Reveal><div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900">Proyectos recientes</h2>
-          <p className="mt-4 text-neutral-600 text-lg">Casos reales con resultados medibles, no solo diseño bonito.</p>
+          <p className="mt-4 text-neutral-600 text-lg">Soluciones digitales que puedes explorar antes de cotizar tu proyecto.</p>
         </div></Reveal>
 
         <div className="space-y-16">
@@ -82,43 +82,59 @@ export default function Portfolio() {
             </div>
           </div></Reveal>
 
-          {/* Project 3 */}
+          {/* Project 3 - ERP demo */}
           <Reveal><div className="grid lg:grid-cols-2 gap-10 items-center group">
             <div className="order-2 lg:order-1">
-              <span className="inline-block bg-neutral-100 text-neutral-700 text-xs font-medium px-3 py-1 rounded-full mb-4">Corporativo</span>
-              <h3 className="text-2xl font-bold text-neutral-900 mb-3">TechCorp Solutions</h3>
+              <span className="inline-block bg-neutral-100 text-neutral-700 text-xs font-medium px-3 py-1 rounded-full mb-4">Sistema ERP</span>
+              <h3 className="text-2xl font-bold text-neutral-900 mb-3">Nexo ERP</h3>
               <p className="text-neutral-600 mb-6 leading-relaxed">
-                Sitio institucional B2B con sección de servicios, casos de éxito, blog corporativo y formulario de contacto con CRM integrado.
+                Plataforma empresarial para controlar ventas, facturación, clientes, inventario y finanzas desde un solo lugar. Explora una demostración interactiva con datos ficticios.
               </p>
-              <div className="flex flex-wrap gap-2">
-                {["React", "Node.js", "PostgreSQL", "Docker"].map((t) => (
+              <div className="flex flex-wrap gap-2 mb-6">
+                {["Next.js", "React", "Inventario", "Reportes"].map((t) => (
                   <span key={t} className="text-xs text-neutral-500 border border-neutral-200 px-3 py-1 rounded-full">{t}</span>
                 ))}
               </div>
+              <a href="https://erp-demo-vert.vercel.app" target="_blank" rel="noopener noreferrer" className="text-neutral-900 hover:text-blue-800 text-sm font-semibold underline underline-offset-4 decoration-neutral-300 transition-colors">
+                Explorar demostración →
+              </a>
             </div>
             <div className="order-1 lg:order-2">
               <div className="glass-card rounded-xl overflow-hidden aurora-card">
-                <div className="bg-[#0f172a] px-4 py-2 flex items-center gap-2 border-b border-white/5">
+                <div className="bg-[#0b1220] px-4 py-2 flex items-center gap-2 border-b border-white/5">
                   <div className="flex gap-1.5">
                     <div className="w-2.5 h-2.5 rounded-full bg-red-500" />
                     <div className="w-2.5 h-2.5 rounded-full bg-yellow-500" />
                     <div className="w-2.5 h-2.5 rounded-full bg-green-500" />
                   </div>
                   <div className="flex-1 text-center">
-                    <span className="text-xs text-neutral-500">techcorp.cl</span>
+                    <span className="text-xs text-neutral-500">Nexo ERP · Demo</span>
                   </div>
                 </div>
-                <div className="aspect-video bg-gradient-to-br from-neutral-800/40 to-neutral-700/20 p-6">
-                  <div className="flex items-center gap-2 mb-4">
-                    <div className="w-6 h-6 rounded bg-blue-500" />
-                    <span className="text-white text-sm font-bold">TechCorp</span>
+                <div className="aspect-video bg-[#f4f6f9] flex">
+                  <div className="w-[28%] bg-[#0b1220] p-3">
+                    <div className="flex items-center gap-2 mb-5">
+                      <div className="w-6 h-6 rounded-md bg-blue-600" />
+                      <span className="text-white text-xs font-bold">Nexo</span>
+                    </div>
+                    <div className="space-y-2">
+                      <div className="h-5 rounded bg-blue-600" />
+                      <div className="h-5 rounded bg-white/5" />
+                      <div className="h-5 rounded bg-white/5" />
+                      <div className="h-5 rounded bg-white/5" />
+                    </div>
                   </div>
-                  <div className="text-white text-lg font-bold mb-2">Soluciones tecnológicas</div>
-                  <p className="text-neutral-400 text-xs mb-4">para empresas modernas</p>
-                  <div className="grid grid-cols-3 gap-2">
-                    <div className="bg-white/10 rounded h-16" />
-                    <div className="bg-white/10 rounded h-16" />
-                    <div className="bg-white/10 rounded h-16" />
+                  <div className="flex-1 p-4">
+                    <div className="text-neutral-900 text-sm font-bold mb-1">Resumen de la empresa</div>
+                    <div className="text-neutral-400 text-[9px] mb-4">Ventas, clientes e inventario</div>
+                    <div className="grid grid-cols-3 gap-2 mb-3">
+                      <div className="bg-white border border-neutral-200 rounded-md h-12 p-2"><div className="h-1.5 w-8 bg-neutral-200 rounded mb-2" /><div className="h-2 w-12 bg-blue-500 rounded" /></div>
+                      <div className="bg-white border border-neutral-200 rounded-md h-12 p-2"><div className="h-1.5 w-8 bg-neutral-200 rounded mb-2" /><div className="h-2 w-10 bg-emerald-500 rounded" /></div>
+                      <div className="bg-white border border-neutral-200 rounded-md h-12 p-2"><div className="h-1.5 w-8 bg-neutral-200 rounded mb-2" /><div className="h-2 w-9 bg-amber-500 rounded" /></div>
+                    </div>
+                    <div className="bg-white border border-neutral-200 rounded-md h-16 flex items-end gap-1.5 p-2">
+                      {[35, 55, 42, 68, 58, 82, 72, 92].map((height, index) => <div key={index} className={`flex-1 rounded-t ${index === 7 ? "bg-blue-600" : "bg-blue-200"}`} style={{ height: `${height}%` }} />)}
+                    </div>
                   </div>
                 </div>
               </div>
