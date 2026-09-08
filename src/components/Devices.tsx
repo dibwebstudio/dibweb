@@ -2,7 +2,7 @@
 
 export default function Devices() {
   return (
-    <div className="relative flex justify-center lg:justify-end items-end gap-6 lg:gap-8">
+    <div className="relative flex justify-center lg:justify-end items-end gap-6 lg:gap-8" style={{perspective:'1200px'}}>
       <Monitor />
       <Phone />
     </div>
@@ -141,7 +141,7 @@ function Monitor() {
         }
       `}</style>
 
-      <div className="animate-float">
+      <div className="animate-float" style={{transform:'rotateY(-4deg) rotateX(2deg)', transformStyle:'preserve-3d'}}>
         <svg viewBox="0 0 660 490" className="w-full max-w-[520px] transition-transform duration-500 group-hover:scale-[1.015]" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="mFrame" x1="0" y1="0" x2="0" y2="1">
@@ -173,14 +173,14 @@ function Monitor() {
           <rect x="40" y="18" width="580" height="380" rx="8" fill="url(#mFrame)" filter="url(#mShadow)"/>
 
           {/* Top bezel highlight */}
-          <rect x="40" y="18" width="580" height="1.5" fill="rgba(255,255,255,0.06)" rx="1"/>
+          <rect x="40" y="18" width="580" height="2" fill="rgba(255,255,255,0.08)" rx="1"/>
           {/* Side bezel lines */}
-          <rect x="40" y="18" width="1.5" height="380" fill="rgba(255,255,255,0.04)"/>
-          <rect x="618.5" y="18" width="1.5" height="380" fill="rgba(255,255,255,0.04)"/>
+          <rect x="40" y="18" width="2" height="380" fill="rgba(255,255,255,0.06)"/>
+          <rect x="618" y="18" width="2" height="380" fill="rgba(255,255,255,0.06)"/>
 
           {/* Bottom bezel */}
           <rect x="40" y="390" width="580" height="8" fill="#1a1e24"/>
-          <circle cx="330" cy="394" r="2" fill="#333"/>
+          <circle cx="330" cy="394" r="2.5" fill="#444"/>
 
           {/* Camera dot */}
           <circle cx="330" cy="22" r="1.8" fill="#222"/>
@@ -188,6 +188,8 @@ function Monitor() {
 
           {/* Screen */}
           <rect x="50" y="28" width="560" height="352" fill="#0a0e14"/>
+          {/* Screen edge highlight */}
+          <rect x="50" y="28" width="560" height="352" fill="none" stroke="rgba(255,255,255,0.03)" strokeWidth="0.5" rx="2"/>
 
           {/* Animated pages */}
           <g clipPath="url(#mScreen)">
@@ -293,7 +295,7 @@ function Phone() {
         }
       `}</style>
 
-      <div className="animate-float-delay">
+      <div className="animate-float-delay" style={{transform:'rotateY(6deg) rotateX(1deg)', transformStyle:'preserve-3d'}}>
         <svg viewBox="0 0 210 440" className="w-full max-w-[130px] transition-transform duration-500 group-hover:scale-[1.02] group-hover:-translate-y-1" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="pFrame" x1="0" y1="0" x2="1" y2="0">
@@ -314,13 +316,15 @@ function Phone() {
           <rect x="8" y="8" width="194" height="424" rx="30" fill="url(#pFrame)" filter="url(#pShadow)"/>
 
           {/* Side buttons */}
-          <rect x="3" y="100" width="2.5" height="20" rx="1" fill="#888"/>
-          <rect x="3" y="128" width="2.5" height="32" rx="1" fill="#888"/>
-          <rect x="3" y="168" width="2.5" height="32" rx="1" fill="#888"/>
-          <rect x="204.5" y="140" width="2.5" height="38" rx="1" fill="#888"/>
+          <rect x="2" y="100" width="3" height="20" rx="1.5" fill="#999"/>
+          <rect x="2" y="128" width="3" height="32" rx="1.5" fill="#999"/>
+          <rect x="2" y="168" width="3" height="32" rx="1.5" fill="#999"/>
+          <rect x="205" y="140" width="3" height="38" rx="1.5" fill="#999"/>
 
           {/* Inner screen */}
           <rect x="14" y="14" width="182" height="412" rx="24" fill="#0a0e14"/>
+          {/* Screen edge highlight */}
+          <rect x="14" y="14" width="182" height="412" fill="none" stroke="rgba(255,255,255,0.04)" strokeWidth="0.5" rx="24"/>
 
           {/* Dynamic Island */}
           <rect x="62" y="20" width="86" height="24" rx="12" fill="#000"/>
