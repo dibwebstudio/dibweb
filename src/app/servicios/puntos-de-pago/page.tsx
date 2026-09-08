@@ -35,6 +35,9 @@ export default function PuntosDePago() {
                   Desarrollamos sistemas de punto de venta (POS) personalizados para tu negocio. Cobros con efectivo, tarjeta, transferencia y múltiples medios de pago. Disponible a medida o en arriendo mensual.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
+                  <a href="https://pos-demo-tan.vercel.app" target="_blank" rel="noopener noreferrer" className="btn-primary px-8 py-4 rounded-lg text-sm font-semibold text-center">
+                    Probar demo POS
+                  </a>
                   <a href="#contacto" className="btn-primary px-8 py-4 rounded-lg text-sm font-semibold text-center">
                     Solicitar cotización
                   </a>

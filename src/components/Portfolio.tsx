@@ -76,8 +76,8 @@ export default function Portfolio() {
                   <span key={t} className="text-xs text-neutral-500 border border-neutral-200 px-3 py-1 rounded-full">{t}</span>
                 ))}
               </div>
-              <a href="/servicios/puntos-de-pago" className="text-neutral-900 hover:text-blue-800 text-sm font-semibold underline underline-offset-4 decoration-neutral-300 transition-colors">
-                Ver más detalles →
+              <a href="https://pos-demo-tan.vercel.app" target="_blank" rel="noopener noreferrer" className="text-neutral-900 hover:text-blue-800 text-sm font-semibold underline underline-offset-4 decoration-neutral-300 transition-colors">
+                Probar demostración →
               </a>
             </div>
           </div></Reveal>
