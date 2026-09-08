@@ -28,8 +28,7 @@ function sanitize(input: string): string {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#x27;")
-    .trim()
-    .slice(0, 1000);
+    .trim();
 }
 
 function validateEmail(email: string): boolean {
@@ -43,8 +42,18 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Demasiadas solicitudes" }, { status: 429 });
     }
 
-    const body = await req.json();
-    const { name, email, service, message } = body;
+    const body = await req.json().catch(() => null);
+    if (!body || typeof body !== "object" || Array.isArray(body)) {
+      return NextResponse.json({ error: "Solicitud inválida" }, { status: 400 });
+    }
+    if (body.website) return NextResponse.json({ success: true });
+    const { service } = body;
+    const name = typeof body.name === "string" ? body.name.trim() : body.name;
+    const email = typeof body.email === "string" ? body.email.trim() : body.email;
+    const message = typeof body.message === "string" ? body.message.trim() : body.message;
+    if (service != null && (typeof service !== "string" || service.length > 200)) {
+      return NextResponse.json({ error: "Servicio inválido" }, { status: 400 });
+    }
 
     if (!name || !email || !message) {
       return NextResponse.json({ error: "Faltan campos obligatorios" }, { status: 400 });
@@ -55,15 +64,15 @@ export async function POST(req: NextRequest) {
     }
 
     if (name.length < 2 || name.length > 200) {
-      return NextResponse.json({ error: "Nombre inválido" }, { status: 400 });
+      return NextResponse.json({ error: "El nombre debe tener entre 2 y 200 caracteres." }, { status: 400 });
     }
 
-    if (!validateEmail(email)) {
+    if (email.length > 254 || !validateEmail(email)) {
       return NextResponse.json({ error: "Email inválido" }, { status: 400 });
     }
 
     if (message.length < 10 || message.length > 2000) {
-      return NextResponse.json({ error: "Mensaje inválido" }, { status: 400 });
+      return NextResponse.json({ error: "El mensaje debe tener entre 10 y 2000 caracteres." }, { status: 400 });
     }
 
     if (body.website) {

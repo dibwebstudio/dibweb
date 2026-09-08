@@ -28,7 +28,6 @@ export default function Process() {
     <section className="py-24 px-4 sm:px-6 lg:px-8 bg-white border-y border-[#e7e5e0]">
       <div className="max-w-7xl mx-auto">
         <Reveal><div className="max-w-3xl mb-14">
-          <p className="label mb-4">Cómo trabajamos</p>
           <h2 className="text-3xl sm:text-5xl text-neutral-900 leading-tight">Un proceso simple y transparente</h2>
         </div></Reveal>
         <Reveal delay={120}><div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-10">

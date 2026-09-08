@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://ipad-six-rho.vercel.app";
+  const base = "https://dibwebstudio.online";
   return [
     { url: base, lastModified: new Date(), changeFrequency: "monthly", priority: 1 },
     { url: `${base}/servicios/puntos-de-pago`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },

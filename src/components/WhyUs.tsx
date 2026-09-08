@@ -6,7 +6,6 @@ export default function WhyUs() {
       <div className="max-w-7xl mx-auto">
         <Reveal><div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <p className="label mb-4">¿Por qué nosotros?</p>
             <h2 className="text-3xl sm:text-4xl text-neutral-900 leading-tight mb-6">
               No solo hacemos páginas.<br />Acompañamos resultados.
             </h2>

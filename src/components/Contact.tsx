@@ -18,11 +18,14 @@ export default function Contact() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name: data.get("name"), email: data.get("email"), service: data.get("service"), message: data.get("message") }),
+        body: JSON.stringify({ name: data.get("name"), email: data.get("email"), service: data.get("service"), message: data.get("message"), website: data.get("website") }),
       });
-      if (!res.ok) throw new Error("Error");
+      if (!res.ok) {
+        const result = await res.json();
+        throw new Error(result.error || "No pudimos enviar el mensaje.");
+      }
       setSubmitted(true);
-    } catch { setError("Hubo un error, intentá de nuevo."); }
+    } catch (cause) { setError(cause instanceof Error ? cause.message : "No pudimos enviar el mensaje. Intenta nuevamente o escríbenos por WhatsApp."); }
     finally { setLoading(false); }
   }
 
@@ -31,7 +34,6 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto">
         <Reveal><div className="grid lg:grid-cols-2 gap-12">
           <div>
-            <p className="label mb-4">Contacto</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 mb-6">Hablemos de tu proyecto</h2>
             <p className="text-neutral-600 text-lg mb-10">Cuéntanos qué necesitas y te responderemos en menos de 24 horas.</p>
             <div className="space-y-6">
@@ -57,7 +59,7 @@ export default function Contact() {
 
           <div className="glass-card rounded-2xl p-8 shadow-sm">
             {submitted ? (
-              <div className="flex flex-col items-center justify-center h-full text-center">
+              <div role="status" className="flex flex-col items-center justify-center h-full text-center">
                 <div className="w-16 h-16 bg-emerald-50 rounded-full flex items-center justify-center mb-6">
                   <svg className="w-8 h-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -69,16 +71,16 @@ export default function Contact() {
             ) : (
               <form className="space-y-5" onSubmit={handleSubmit}>
                 <div>
-                  <label className="block text-sm font-medium text-neutral-700 mb-1.5">Nombre</label>
-                  <input type="text" name="name" required className="w-full px-4 py-3 rounded-lg bg-white border border-neutral-300 text-neutral-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 placeholder:text-neutral-400 transition-all" placeholder="Tu nombre" />
+                  <label htmlFor="contact-name" className="block text-sm font-medium text-neutral-700 mb-1.5">Nombre</label>
+                  <input type="text" id="contact-name" name="name" autoComplete="name" minLength={2} maxLength={200} required className="w-full px-4 py-3 rounded-lg bg-white border border-neutral-300 text-neutral-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 placeholder:text-neutral-400 transition-all" placeholder="Tu nombre" />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-neutral-700 mb-1.5">Email</label>
-                  <input type="email" name="email" required className="w-full px-4 py-3 rounded-lg bg-white border border-neutral-300 text-neutral-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 placeholder:text-neutral-400 transition-all" placeholder="tu@email.com" />
+                  <label htmlFor="contact-email" className="block text-sm font-medium text-neutral-700 mb-1.5">Email</label>
+                  <input type="email" id="contact-email" name="email" autoComplete="email" maxLength={254} required className="w-full px-4 py-3 rounded-lg bg-white border border-neutral-300 text-neutral-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 placeholder:text-neutral-400 transition-all" placeholder="tu@email.com" />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-neutral-700 mb-1.5">Servicio</label>
-                  <select name="service" className="w-full px-4 py-3 rounded-lg bg-white border border-neutral-300 text-neutral-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all appearance-none">
+                  <label htmlFor="contact-service" className="block text-sm font-medium text-neutral-700 mb-1.5">Servicio</label>
+                  <select id="contact-service" name="service" className="w-full px-4 py-3 rounded-lg bg-white border border-neutral-300 text-neutral-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all appearance-none">
                     <option>Landing Page</option>
                     <option>Sitio Corporativo</option>
                     <option>E-commerce</option>
@@ -88,13 +90,13 @@ export default function Contact() {
                   </select>
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-neutral-700 mb-1.5">Mensaje</label>
-                  <textarea name="message" required rows={4} className="w-full px-4 py-3 rounded-lg bg-white border border-neutral-300 text-neutral-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 resize-none placeholder:text-neutral-400 transition-all" placeholder="Cuéntanos sobre tu proyecto..." />
+                  <label htmlFor="contact-message" className="block text-sm font-medium text-neutral-700 mb-1.5">Mensaje</label>
+                  <textarea id="contact-message" name="message" minLength={10} maxLength={2000} required rows={4} className="w-full px-4 py-3 rounded-lg bg-white border border-neutral-300 text-neutral-900 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 resize-none placeholder:text-neutral-400 transition-all" placeholder="Cuéntanos sobre tu proyecto..." />
                 </div>
                 <div style={{ position: "absolute", left: "-9999px" }} aria-hidden="true">
                   <input type="text" name="website" tabIndex={-1} autoComplete="off" />
                 </div>
-                {error && <p className="text-red-500 text-sm">{error}</p>}
+                {error && <p role="alert" className="text-red-500 text-sm">{error}</p>}
                 <button type="submit" disabled={loading} className="w-full btn-primary py-3 rounded-lg text-sm font-semibold disabled:opacity-50">
                   {loading ? "Enviando..." : "Enviar mensaje"}
                 </button>

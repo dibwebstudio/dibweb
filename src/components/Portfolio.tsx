@@ -6,9 +6,8 @@ export default function Portfolio() {
     <section id="portfolio" className="relative py-24 px-4 sm:px-6 lg:px-8 bg-white border-y border-[#e7e5e0]">
       <div className="max-w-7xl mx-auto">
         <Reveal><div className="text-center max-w-2xl mx-auto mb-16">
-          <p className="label mb-4">Portfolio</p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">Proyectos recientes</h2>
-          <p className="mt-4 text-slate-600 text-lg">Casos reales con resultados medibles, no solo diseño bonito.</p>
+          <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900">Proyectos recientes</h2>
+          <p className="mt-4 text-neutral-600 text-lg">Casos reales con resultados medibles, no solo diseño bonito.</p>
         </div></Reveal>
 
         <div className="space-y-16">
@@ -16,8 +15,8 @@ export default function Portfolio() {
           <Reveal><div className="grid lg:grid-cols-2 gap-10 items-center group">
             <div className="order-2 lg:order-1">
               <span className="inline-block bg-neutral-100 text-neutral-700 text-xs font-medium px-3 py-1 rounded-full mb-4">E-commerce</span>
-              <h3 className="text-2xl font-bold text-slate-900 mb-3">Goesca Store</h3>
-              <p className="text-slate-600 mb-6 leading-relaxed">
+              <h3 className="text-2xl font-bold text-neutral-900 mb-3">Goesca Store</h3>
+              <p className="text-neutral-600 mb-6 leading-relaxed">
                 Tienda online de artículos de aseo para hogar, negocio y empresa. Incluye catálogo de productos, carrito de compras, pasarela de pagos y panel de administración.
               </p>
               <div className="flex flex-wrap gap-2 mb-6">
@@ -38,7 +37,7 @@ export default function Portfolio() {
                     <div className="w-2.5 h-2.5 rounded-full bg-green-500" />
                   </div>
                   <div className="flex-1 text-center">
-                    <span className="text-xs text-slate-500">goesca.store</span>
+                    <span className="text-xs text-neutral-500">goesca.store</span>
                   </div>
                 </div>
                 <div className="aspect-video bg-gradient-to-br from-[#1a2332] to-[#162030] p-6">
@@ -48,7 +47,7 @@ export default function Portfolio() {
                   </div>
                   <div className="text-white text-xl font-bold mb-1">Productos de aseo al</div>
                   <div className="text-white text-xl font-bold mb-1">mejor <span className="text-[#f68b1f]">precio</span></div>
-                  <p className="text-slate-400 text-xs mb-4">Envíos a todo Chile</p>
+                  <p className="text-neutral-400 text-xs mb-4">Envíos a todo Chile</p>
                   <div className="grid grid-cols-3 gap-2">
                     <div className="bg-white/10 rounded p-2 h-12" />
                     <div className="bg-white/10 rounded p-2 h-12" />
@@ -68,8 +67,8 @@ export default function Portfolio() {
             </div>
             <div>
               <span className="inline-block bg-neutral-100 text-neutral-700 text-xs font-medium px-3 py-1 rounded-full mb-4">Software POS</span>
-              <h3 className="text-2xl font-bold text-slate-900 mb-3">Sistema de Cajero</h3>
-              <p className="text-slate-600 mb-6 leading-relaxed">
+              <h3 className="text-2xl font-bold text-neutral-900 mb-3">Sistema de Cajero</h3>
+              <p className="text-neutral-600 mb-6 leading-relaxed">
                 Sistema de punto de venta para tiendas de retail. Se crean a medida según las necesidades de tu negocio, o puedes arrendarlo mensualmente. Control de inventario, múltiples medios de pago, reportes de ventas y facturación electrónica.
               </p>
               <div className="flex flex-wrap gap-2 mb-6">
@@ -87,8 +86,8 @@ export default function Portfolio() {
           <Reveal><div className="grid lg:grid-cols-2 gap-10 items-center group">
             <div className="order-2 lg:order-1">
               <span className="inline-block bg-neutral-100 text-neutral-700 text-xs font-medium px-3 py-1 rounded-full mb-4">Corporativo</span>
-              <h3 className="text-2xl font-bold text-slate-900 mb-3">TechCorp Solutions</h3>
-              <p className="text-slate-600 mb-6 leading-relaxed">
+              <h3 className="text-2xl font-bold text-neutral-900 mb-3">TechCorp Solutions</h3>
+              <p className="text-neutral-600 mb-6 leading-relaxed">
                 Sitio institucional B2B con sección de servicios, casos de éxito, blog corporativo y formulario de contacto con CRM integrado.
               </p>
               <div className="flex flex-wrap gap-2">
@@ -106,16 +105,16 @@ export default function Portfolio() {
                     <div className="w-2.5 h-2.5 rounded-full bg-green-500" />
                   </div>
                   <div className="flex-1 text-center">
-                    <span className="text-xs text-slate-500">techcorp.cl</span>
+                    <span className="text-xs text-neutral-500">techcorp.cl</span>
                   </div>
                 </div>
-                <div className="aspect-video bg-gradient-to-br from-slate-800/40 to-slate-700/20 p-6">
+                <div className="aspect-video bg-gradient-to-br from-neutral-800/40 to-neutral-700/20 p-6">
                   <div className="flex items-center gap-2 mb-4">
                     <div className="w-6 h-6 rounded bg-blue-500" />
                     <span className="text-white text-sm font-bold">TechCorp</span>
                   </div>
                   <div className="text-white text-lg font-bold mb-2">Soluciones tecnológicas</div>
-                  <p className="text-slate-400 text-xs mb-4">para empresas modernas</p>
+                  <p className="text-neutral-400 text-xs mb-4">para empresas modernas</p>
                   <div className="grid grid-cols-3 gap-2">
                     <div className="bg-white/10 rounded h-16" />
                     <div className="bg-white/10 rounded h-16" />

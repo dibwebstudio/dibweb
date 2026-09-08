@@ -4,7 +4,7 @@ import Reveal from "@/components/Reveal";
 
 export default function Hero() {
   return (
-    <section className="relative pt-36 pb-24 px-4 sm:px-6 lg:px-8 overflow-hidden bg-[#faf9f7]">
+    <section className="relative pt-28 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-[#faf9f7]">
       <div className="relative max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-14 items-center">
           <div>
@@ -21,7 +21,7 @@ export default function Hero() {
 
               <p className="mt-7 text-lg lg:text-xl text-neutral-600 max-w-xl leading-relaxed">
                 Desarrollamos páginas web, tiendas online y sistemas de punto de venta a medida.
-                Trabajo de calidad, entregas a tiempo y soporte real después del lanzamiento.
+                Entregas a tiempo y soporte real después del lanzamiento.
               </p>
 
               <div className="mt-10 flex flex-col sm:flex-row gap-4">
@@ -32,13 +32,6 @@ export default function Hero() {
                   Ver trabajos
                 </a>
               </div>
-
-              <p className="mt-9 text-sm text-neutral-500 flex items-center gap-2">
-                <svg className="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
-                Respuesta en menos de 24 horas, sin compromiso
-              </p>
             </Reveal>
           </div>
           <div className="relative flex justify-center lg:justify-end items-end gap-4 lg:gap-6">

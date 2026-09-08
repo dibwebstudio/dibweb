@@ -1,20 +1,20 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Fraunces } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
+const geist = Geist({
+  variable: "--font-geist",
   subsets: ["latin"],
   display: "swap",
 });
 
-const fraunces = Fraunces({
-  variable: "--font-fraunces",
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
   subsets: ["latin"],
   display: "swap",
 });
 
-const siteUrl = "https://ipad-six-rho.vercel.app";
+const siteUrl = "https://dibwebstudio.online";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -107,7 +107,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className={`${inter.variable} ${fraunces.variable} antialiased`}>
+    <html lang="es" className={`${geist.variable} ${geistMono.variable} antialiased`}>
       <body className="min-h-screen bg-[#faf9f7] text-[#111111] font-sans">
         <script
           type="application/ld+json"

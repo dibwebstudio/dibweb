@@ -20,7 +20,6 @@ export default function Services() {
     <section id="servicios" className="py-28 px-4 sm:px-6 lg:px-8 bg-[#faf9f7]">
       <div className="max-w-7xl mx-auto">
         <Reveal><div className="max-w-3xl mb-16">
-          <p className="label mb-4">Servicios</p>
           <h2 className="text-3xl sm:text-5xl text-neutral-900 leading-tight">
             Todo lo que tu negocio necesita para estar en internet
           </h2>

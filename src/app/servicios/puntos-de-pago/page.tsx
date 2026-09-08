@@ -4,7 +4,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Puntos de Venta / Pago | DibWeb Studio",
+  title: "Puntos de Venta / Pago",
+  alternates: { canonical: "/servicios/puntos-de-pago" },
   description: "Sistemas de punto de venta (POS) para tu negocio. Software de cobro con efectivo, tarjeta y múltiples medios de pago.",
 };
 
@@ -25,7 +26,7 @@ export default function PuntosDePago() {
 
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <span className="inline-block text-blue-100 text-blue-700 text-xs font-medium px-3 py-1 rounded-full mb-4">Software POS</span>
+                <span className="inline-block bg-neutral-100 text-neutral-700 text-xs font-medium px-3 py-1 rounded-full mb-4">Software POS</span>
                 <h1 className="text-4xl sm:text-5xl font-bold text-neutral-900 mb-6 leading-tight">
                   Puntos de venta<br />
                   <span className="text-neutral-900">modernos y rápidos</span>
@@ -53,7 +54,7 @@ export default function PuntosDePago() {
         </section>
 
         {/* Features */}
-        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50">
+        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-neutral-50">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl font-bold text-neutral-900 text-center mb-12">Características del sistema</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -121,7 +122,7 @@ export default function PuntosDePago() {
         </section>
 
         {/* CTA */}
-        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-slate-50 aurora-bg">
+        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-neutral-50 aurora-bg">
           <div className="aurora-blob aurora-blob-2" style={{ width: '300px', height: '300px', opacity: 0.1 }} />
           <div className="max-w-3xl mx-auto text-center relative">
             <h2 className="text-3xl font-bold text-neutral-900 mb-4">¿Necesitas un sistema POS?</h2>

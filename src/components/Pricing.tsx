@@ -12,7 +12,7 @@ const plans = [
       "Entrega en 5 días",
       "1 revisión incluida",
     ],
-    cta: "Solicitar",
+    cta: "Solicitar cotización",
     popular: false,
   },
   {
@@ -29,7 +29,7 @@ const plans = [
       "3 revisiones incluidas",
       "Soporte 30 días",
     ],
-    cta: "Más popular",
+    cta: "Solicitar cotización",
     popular: true,
   },
   {
@@ -46,7 +46,7 @@ const plans = [
       "Revisiones ilimitadas",
       "Soporte 90 días",
     ],
-    cta: "Contactar",
+    cta: "Solicitar cotización",
     popular: false,
   },
 ];
@@ -66,7 +66,6 @@ export default function Pricing() {
     <section id="precios" className="relative py-24 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <Reveal><div className="text-center max-w-2xl mx-auto mb-16">
-          <p className="label mb-4">Precios</p>
           <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900">Planes transparentes y a medida</h2>
           <p className="mt-4 text-neutral-600 text-lg">Planes estándar desde $120.000 CLP o soluciones personalizadas para tu negocio.</p>
         </div></Reveal>
@@ -109,7 +108,7 @@ export default function Pricing() {
               <div>
                 <span className="inline-block bg-white/10 text-neutral-300 text-xs font-medium px-3 py-1 rounded-full mb-4">Plan a Medida</span>
                 <h3 className="text-2xl font-bold text-white mb-3">¿Necesitas algo diferente?</h3>
-                <p className="text-slate-300 leading-relaxed">
+                <p className="text-neutral-300 leading-relaxed">
                   Si tu proyecto no encaja en estos planes, creamos una solución completamente personalizada:
                   combinaciones de servicios, funcionalidades especiales, integraciones con tus sistemas o
                   modalidad de arriendo mensual. Cuéntanos tu idea.
@@ -123,7 +122,7 @@ export default function Pricing() {
                     "Modalidad compra o arriendo mensual",
                     "Acompañamiento y soporte dedicado",
                   ].map((f) => (
-                    <li key={f} className="flex items-start gap-3 text-sm text-slate-200">
+                    <li key={f} className="flex items-start gap-3 text-sm text-neutral-200">
                       <svg className="w-5 h-5 text-neutral-300 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
@@ -131,8 +130,8 @@ export default function Pricing() {
                     </li>
                   ))}
                 </ul>
-                <a href="#contacto" className="mt-2 bg-white text-neutral-900 text-center py-3 rounded-lg text-sm font-semibold hover:bg-blue-50 transition-colors">
-                  Cotizar proyecto a medida
+                <a href="#contacto" className="mt-2 bg-white text-neutral-900 text-center py-3 rounded-lg text-sm font-semibold hover:bg-neutral-100 transition-colors">
+                  Solicitar cotización
                 </a>
               </div>
             </div>
@@ -158,7 +157,7 @@ export default function Pricing() {
                     <p className="text-neutral-500 text-xs mt-0.5">{s.desc}</p>
                   </div>
                 </div>
-                <div className="mt-4 pt-4 border-t border-slate-100">
+                <div className="mt-4 pt-4 border-t border-neutral-100">
                   <span className="text-neutral-900 font-bold text-lg">{s.price}</span>
                 </div>
               </div>
