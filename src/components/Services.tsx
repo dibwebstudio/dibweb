@@ -68,12 +68,12 @@ export default function Services() {
   const featured = [
     { title: "Landing Pages", desc: "Páginas de alto impacto diseñadas para convertir visitantes en clientes.", price: "Desde $120.000", link: "#contacto" },
     { title: "E-commerce", desc: "Tiendas online completas: catálogo, pasarela de pagos y gestión de inventario.", price: "Desde $450.000", link: "#contacto" },
-    { title: "Puntos de Venta (POS)", desc: "Sistemas de cajero a medida o en modalidad de arriendo mensual.", price: "A medida", link: "/servicios/puntos-de-pago" },
+    { title: "Puntos de Venta (POS)", desc: "Sistemas de cajero a medida o en modalidad de arriendo mensual.", price: "Desde $199.000", link: "/servicios/puntos-de-pago" },
   ];
 
   const mid = [
     { title: "Sitios Corporativos", desc: "Sitios institucionales que transmiten profesionalismo.", price: "Desde $250.000", link: "#contacto" },
-    { title: "Sistemas ERP", desc: "Gestión empresarial: inventario, ventas y facturación.", price: "Desde $800.000", link: "#contacto" },
+    { title: "Sistemas ERP", desc: "Gestión empresarial: inventario, ventas y facturación.", price: "Desde $500.000", link: "#contacto" },
     { title: "SEO & Marketing", desc: "Posicionamiento y estrategia digital.", price: "Desde $60.000", link: "#contacto" },
   ];
 

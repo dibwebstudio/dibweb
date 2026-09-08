@@ -87,9 +87,9 @@ export default function PuntosDePago() {
             <p className="text-neutral-600 text-center mb-12">Todos los precios en pesos chilenos.</p>
             <div className="grid md:grid-cols-3 gap-6">
               {[
-                { name: "Básico", price: "299.000", desc: "Una caja, funcionalidades esenciales.", features: ["1 caja registradora", "Efectivo y tarjeta", "Control de stock básico", "Reportes diarios", "Soporte email"], popular: false },
-                { name: "Profesional", price: "599.000", desc: "Multi-caja y reportes avanzados.", features: ["Hasta 5 cajas", "Todos los medios de pago", "Control de stock avanzado", "Reportes completos", "Facturación electrónica", "Soporte prioritario"], popular: true },
-                { name: "Enterprise", price: "999.000", desc: "Solución completa para retail.", features: ["Cajas ilimitadas", "Multi-sucursal", "API integraciones", "Dashboard en tiempo real", "Soporte 24/7", "Capacitación incluida"], popular: false },
+                { name: "Básico", price: "199.000", desc: "Una caja, funcionalidades esenciales.", features: ["1 caja registradora", "Efectivo y tarjeta", "Control de stock básico", "Reportes diarios", "Soporte email"], popular: false },
+                { name: "Profesional", price: "399.000", desc: "Multi-caja y reportes avanzados.", features: ["Hasta 5 cajas", "Todos los medios de pago", "Control de stock avanzado", "Reportes completos", "Facturación electrónica", "Soporte prioritario"], popular: true },
+                { name: "Enterprise", price: "699.000", desc: "Solución completa para retail.", features: ["Cajas ilimitadas", "Multi-sucursal", "API integraciones", "Dashboard en tiempo real", "Soporte 24/7", "Capacitación incluida"], popular: false },
               ].map((p) => (
                 <div key={p.name} className={`rounded-xl p-8 ${p.popular ? "bg-white border-2 border-neutral-900 shadow-sm" : "glass-card aurora-card"}`}>
                   {p.popular && <span className="text-xs label mb-4 block !text-neutral-900">Recomendado</span>}
