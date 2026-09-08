@@ -150,6 +150,36 @@ h1, h2 {
   font-weight: 500;
 }
 
+/* Float animation for device mockups */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+.animate-float { animation: float 4s ease-in-out infinite; }
+.animate-float-slow { animation: float-slow 5s ease-in-out infinite; }
+.animate-float-delay { animation: float 4s ease-in-out 0.8s infinite; }
+
+/* Staggered device entrance */
+@keyframes device-in-left {
+  from { opacity: 0; transform: translateX(-30px) translateY(20px) scale(0.95); }
+  to { opacity: 1; transform: translateX(0) translateY(0) scale(1); }
+}
+@keyframes device-in-right {
+  from { opacity: 0; transform: translateX(30px) translateY(20px) scale(0.95); }
+  to { opacity: 1; transform: translateX(0) translateY(0) scale(1); }
+}
+.animate-device-left { animation: device-in-left 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both; }
+.animate-device-right { animation: device-in-right 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.5s both; }
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float, .animate-float-slow, .animate-float-delay { animation: none; }
+  .animate-device-left, .animate-device-right { animation: none; opacity: 1; transform: none; }
+}
+
 /* Smooth image zoom */
 .img-zoom {
   transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);

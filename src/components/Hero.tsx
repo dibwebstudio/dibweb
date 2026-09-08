@@ -35,9 +35,9 @@ export default function Hero() {
             </Reveal>
           </div>
           <div className="relative flex justify-center lg:justify-end items-end gap-4 lg:gap-6">
-            <Reveal delay={200} className="contents">
             {/* Monitor - showing goesca.store */}
-            <div className="group relative">
+            <div className="group relative animate-device-left">
+              <div className="animate-float">
               <svg viewBox="0 0 640 480" className="w-full max-w-2xl transition-transform duration-500 group-hover:scale-[1.02]" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                   <linearGradient id="monitorFrame" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -231,10 +231,12 @@ export default function Hero() {
                 <text x="460" y="364" fontSize="3.5" fill="#9ca3af" fontFamily="system-ui">Retiro express</text>
                 <text x="320" y="373" textAnchor="middle" fontSize="3" fill="#6b7280" fontFamily="system-ui">Goesca © 2026 — Todos los derechos reservados</text>
               </svg>
+              </div>
             </div>
 
             {/* Phone - showing goesca.store mobile */}
-            <div className="group relative -ml-8 lg:-ml-16">
+            <div className="group relative -ml-8 lg:-ml-16 animate-device-right">
+              <div className="animate-float-delay">
               <svg viewBox="0 0 200 420" className="w-full max-w-[140px] transition-transform duration-500 group-hover:scale-[1.03] group-hover:-translate-y-1" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                   <linearGradient id="phoneFrame" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -387,8 +389,8 @@ export default function Hero() {
                 {/* Home indicator */}
                 <rect x="68" y="404" width="64" height="3" rx="1.5" fill="#fff" opacity="0.3" />
               </svg>
+              </div>
             </div>
-            </Reveal>
           </div>
         </div>
 
