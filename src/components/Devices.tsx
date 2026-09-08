@@ -2,7 +2,7 @@
 
 export default function Devices() {
   return (
-    <div className="relative flex justify-center lg:justify-end items-end gap-3 lg:gap-5">
+    <div className="relative flex justify-center lg:justify-end items-end gap-6 lg:gap-8">
       <Monitor />
       <Phone />
     </div>
@@ -278,7 +278,7 @@ function Phone() {
   ];
 
   return (
-    <div className="group relative -ml-6 lg:-ml-12">
+    <div className="group relative">
       <style>{`
         @keyframes ph-cycle{0%,22%{opacity:1}26%,56%{opacity:0}60%,90%{opacity:0}94%,100%{opacity:0}}
         @keyframes ph-cycle-1{0%,22%{opacity:0}26%,56%{opacity:1}60%,90%{opacity:0}94%,100%{opacity:0}}
@@ -294,7 +294,7 @@ function Phone() {
       `}</style>
 
       <div className="animate-float-delay">
-        <svg viewBox="0 0 210 440" className="w-full max-w-[155px] transition-transform duration-500 group-hover:scale-[1.02] group-hover:-translate-y-1" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 210 440" className="w-full max-w-[130px] transition-transform duration-500 group-hover:scale-[1.02] group-hover:-translate-y-1" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="pFrame" x1="0" y1="0" x2="1" y2="0">
               <stop offset="0%" stopColor="#3a3f48"/>
